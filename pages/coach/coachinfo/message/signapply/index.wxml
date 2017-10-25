@@ -1,0 +1,25 @@
+<view class="info-box">
+  <image src="{{data.head_figure}}"></image>
+  <view class="name">{{data.nick_name}}</view>
+</view>
+<view class="list-box">
+  <view class="list">
+    <view class="text-wrap" bindtap="bindphone">
+      <text>申请时间</text>
+      <text>{{data.create_time}}  ></text>
+    </view>
+  </view>
+</view>
+<view class="title">
+  <view class="">提示</view>
+  <view class="">课程数量如果不对，请先与会员协商好,修改后再点击同意</view>
+</view>
+<view class="btn-box">
+  <view class="refuse" bindtap="refuse">
+    <view class="">拒绝</view>
+  </view>
+  <view class="agree" bindtap="agree">
+    <view class="">同意</view>
+  </view>
+</view>
+

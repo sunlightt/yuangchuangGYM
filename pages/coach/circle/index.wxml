@@ -1,0 +1,168 @@
+<form bindsubmit="bindFormSubmit">
+    <swiper duration="{{duration}}">
+        <block wx:for="{{imgurls}}">
+            <swiper-item>
+                <!-- <image src="{{imgurl+item}}" class="slide-image" /> -->
+                <image src="{{imgurl+item}}" class="slide-image" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="add-box" wx:if="{{identity}}">
+        <view class="add-img" data-img="img1" bindtap="changeimg">
+            <image src="{{img1}}" />
+        </view>
+        <view class="add-img" data-img="img2" bindtap="changeimg">
+            <image src="{{img2}}" />
+        </view>
+        <view class="add-img" data-img="img3" bindtap="changeimg">
+            <image src="{{img3}}" />
+        </view>
+        <view class="add-img" data-img="img4" bindtap="changeimg">
+            <image src="{{img4}}" />
+        </view>
+    </view> 
+    <view class="add-box" wx:else>
+        <view class="add-img" data-index="{{index}}" wx:for="{{imgurls}}" bindtap="tapimg">
+            <image src="{{imgurl+item}}" />
+        </view>
+    </view>
+    <view class="circle-list">
+        <view class="title">
+            <image src="/resources/img/coach.png"></image>
+            <text>本节目标</text>
+            <view class="info">
+                <view>
+                    <image src="{{dynamicdata.course.member_head_figure}}"></image>
+                </view>
+                <view>{{dynamicdata.course.member_nick_name}}</view>
+            </view>
+        </view>
+        <view class="content">
+            <!-- <text class="content-title">以最大程度的增加肌肉纤维度为目标</text> -->
+            <view class="content-des">
+                {{dynamicdata.course.target_section}}
+            </view>
+            <view class="title1">
+                本节内容
+            </view>
+            <view class="list-box">
+                <!-- <view class="list">
+                    1.慢跑10分钟，热身
+                </view>
+                <view class="list">
+                    2.斜卧推举6组，每组5个
+                </view>
+                <view class="list">
+                    3.改善肌肉
+                </view> -->
+                <text class="list">{{dynamicdata.course.course_content}}</text>
+            </view>
+        </view>
+        <view class="adress">
+            <image src="/resources/img/coach.png"></image>
+            <text>{{dynamicdata.course.store_title}}</text>
+        </view>
+    </view>
+    <view class="circle-list coach">
+        <view class="title">
+            <image src="/resources/img/coach.png"></image>
+            <view class="time-box">
+                <view class="coach-name">教练点评</view>
+                <view class="time">{{dynamicdata.course.create_time}}</view>
+            </view>
+            <view class="info">
+                <view>
+                    <image src="{{dynamicdata.course.member_head_figure}}"></image>
+                </view>
+                <view>{{dynamicdata.course.member_nick_name}}</view>
+            </view>
+        </view>
+        <view class="img-box">
+            <image src="{{imgurl+dynamicdata.img_url}}"></image>
+            <view class="number-box">
+                <view class="number">
+                    <image src="/resources/img/praise.png"  data-id="{{dynamicdata.id}}" catchtap="thumb"></image>
+                    <text class="">点赞{{dynamicdata.course.thumb_up_queue.count}}+ </text>
+                </view>
+                <view class="head-list">
+                    <image src="{{item.head_figure}}" wx:for="{{dynamicdata.course.thumb_up_queue.list}}" data-uuid="{{item.uuid}}"></image>
+                </view>
+            </view>
+        </view>
+        <view class="adress">
+            <image src="/resources/img/map-symbol.png"></image>
+            <text>{{dynamicdata.course.store_title}}</text>
+        </view>
+        <view class="comment-wrap">
+            <view class="comment">
+                <image src="/resources/img/arrow.png"></image>
+                <text>{{dynamicdata.coach_reviews}}</text>
+            </view>
+            <view class="coach-img">
+                <image src="{{dynamicdata.course.fitness_head_figure}}"></image>
+                <text>\n{{dynamicdata.course.fitness_nick_name}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="circle-list coach">
+        <view class="title">
+            <image src="/resources/img/coach.png"></image>
+            <view class="time-box">
+                <view class="coach-name">营养补充</view>
+                <view class="time">{{dynamicdata.course.create_time}}</view>
+            </view>
+            <view class="info">
+                <view>
+                    <image src="{{dynamicdata.course.member_head_figure}}"></image>
+                </view>
+                <view>{{dynamicdata.course.member_nick_name}}</view>
+            </view>
+        </view>
+        <view class="img-box1">
+            <image src="{{imgurl+dynamicdata.course.picture}}"></image>
+        </view>
+        <view class="adress">
+            <text>{{dynamicdata.course.store_title}}</text>
+        </view>
+        <view class="food-box">
+            <view class="food-title">
+                食材：
+            </view>
+            <view class="food-detailed">
+                {{dynamicdata.course.ingredients}}
+            </view>
+            <view class="food-title">
+                营养：
+            </view>
+            <view class="food-detailed">
+                {{dynamicdata.course.nutrition}}
+            </view>
+        </view>
+    </view>
+    <form bindsubmit="bindFormSubmit">
+        <view class="comment-box">
+            <view class="comment-title">
+                <image src="/resources/img/pen.png"></image>
+                <view>
+                    <text class="left">留言</text>
+                    <text class="right">{{dynamicdata.course.create_time}}</text>
+                </view>
+            </view>
+            <textarea placeholder="留言..." name="textarea" />
+            <view class="range-box">
+                <text>公开范围</text>
+                <radio-group class="radio-group" bindchange="radioChange">
+                    <label class="radio" wx:for="{{option}}">
+                        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+                    </label>
+                </radio-group>
+            </view>
+        </view>
+        <button class="submitbtn" form-type="submit">
+            提交
+        </button>
+    </form>
+    <button class="sharebtn" open-type="share">
+        分享至朋友圈
+    </button>
+</form>

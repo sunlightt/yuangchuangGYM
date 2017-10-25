@@ -1,0 +1,58 @@
+<view class="head-figure" bindtap="bindheadimg">
+    <image class="figure" src="{{head_figure}}"></image>
+    <text class="link-figure">头像  ></text>
+</view>
+<view class="line"></view>
+<view class="personal-info">
+    <view class="list" bindtap="bindname">
+        <view class="text-wrap">
+            <text>昵称</text>
+            <text>{{name}}  ></text>
+        </view>
+    </view>
+    <view class="list" bindtap="bindphone">
+        <view class="text-wrap">
+            <text>手机</text>
+            <text>{{phone_number}}  ></text>
+        </view>
+    </view>
+</view>
+<view class="line"></view>
+<view class="">
+    <view class="list" bindtap="bindgraderecord">
+        <view class="text-wrap">
+            <text>成绩单</text>
+            <text>+添加 ></text>
+        </view>
+    </view>
+    <view class="list">
+        <view class="text-wrap" bindtap="signgym">
+            <text>签约健身房</text>
+            <text> ></text>
+        </view>
+    </view>
+    <view class="list" bindtap="bindmessage">
+        <view class="text-wrap">
+            <text>消息管理器</text>
+            <view class="coachinfo-img">
+                <!-- <image src="{{imgurl+head_figure}}"></image> -->
+                <text>></text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="line"></view>
+<view class="">
+    <view class="list">
+        <view class="text-wrap" bindtap="previewimg">
+            <text>个人主页小程序</text>
+            <view class="coachinfo-img"  >
+                 <image src="/resources/img/qr.png"></image> 
+                <text>></text>
+            </view>
+        </view>
+    </view>
+    <view class="prompt">
+        <text>提示：可将二维码下载到手机中，然后在朋友圈中展示</text>
+    </view>
+</view>

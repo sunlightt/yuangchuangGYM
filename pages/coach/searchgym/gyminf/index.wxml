@@ -1,0 +1,29 @@
+<view class="info-box">
+    <image src="{{imgurl+data.pictures}}" style='border-radius:0;'></image>
+    <view class="name">{{data.store_title}}</view>
+</view>
+<view class="list-box">
+    <view class="list">
+        <view class="text-wrap" bindtap="bindphone">
+            <text>健身房电话</text>
+            <text>{{data.tel_num}}  ></text>
+        </view>
+    </view>
+    <view class="list">
+        <view class="text-wrap" bindtap="bindphone">
+            <text>介绍</text>
+            <text>{{data.profile}}  ></text>
+        </view>
+    </view>
+    <!-- <view class="list">
+        <view class="text-wrap" bindtap="gym">
+            <text>详细资料</text>
+            <text>  ></text>
+        </view>
+    </view> -->
+</view>
+<view class="btn-box">
+    <view class="agree" bindtap="savebtn">
+        <view class="">签约</view>
+    </view>
+</view>

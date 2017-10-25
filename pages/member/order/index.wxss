@@ -1,0 +1,83 @@
+/* order.wxss */
+
+page {
+    padding-top: 50rpx;
+    background: #eee;
+    box-sizing: border-box;
+}
+
+.figure_head {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.info-box {
+    text-align: center;
+}
+
+.info-box view {
+    text-align: center;
+    font-size: 28rpx;
+    margin-top: 10rpx;
+}
+
+.order-logo {
+    text-align: center;
+}
+
+.order-logo image {
+    width: 64%;
+    margin: 0 auto;
+    height: 100rpx;
+    margin-top: 14rpx;
+}
+
+.order-time {
+    text-align: center;
+    font-size: 28rpx;
+}
+
+.message-wrap {
+    padding: 30rpx 0;
+    width: 94%;
+    background: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.message-box {
+    border: 1px solid red;
+    width: 88%;
+    margin: 0 auto;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+textarea {
+    padding: 10rpx 18rpx;
+    background: #fff;
+    height: 260rpx;
+    width: 100%;
+    font-size: 30rpx;
+    box-sizing: border-box;
+}
+
+.order-time {
+    margin-bottom: 30rpx;
+    color: #454545;
+}
+
+.order-btn {
+    text-align: center;
+    margin-top: 80rpx;
+}
+
+.order-btn button {
+    width: 254rpx;
+    padding: 2rpx 60rpx;
+    color: #fff;
+    background: #e84e40;
+    font-size: 32rpx;
+}

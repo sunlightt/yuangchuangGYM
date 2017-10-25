@@ -1,0 +1,62 @@
+<view class="title">
+  成绩单样例
+</view>
+<view class="grade-box">
+  <view class="grade-report">
+    <view class="before-box">
+      <view class="body-number">
+        <view class="before-time">{{leftdete}}</view>
+        <view class="weight-box">
+          <view>体重:{{grade0.weight}}kg</view>
+          <view>身高:{{grade0.tall}}</view>
+        </view>
+        <view class="weight-box">
+          <view>BMI:{{grade0.bmi}}</view>
+          <view>体型:{{leftmass}}</view>
+        </view>
+      </view>
+      <view id="leftimg" class="body-img" bindtap="choiceimg">
+        <image src="{{leftimg}}"></image>
+      </view>
+    </view>
+    <view class="before-box">
+      <view class="body-number">
+        <view class="before-time">{{rightdete}}</view>
+        <view class="weight-box">
+          <view>体重:{{grade1.weight}}kg</view>
+          <view>身高:{{grade1.tall}}</view>
+        </view>
+        <view class="weight-box">
+          <view>BMI:{{grade1.bmi}}</view>
+          <view>体型:{{rightmass}}</view>
+        </view>
+      </view>
+      <view id="rightimg" class="body-img" bindtap="choiceimg">
+        <image src="{{rightimg}}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="list-box">
+  <view class="list" bindtap="bindmember">
+    <view class="text-wrap {{namebool?'active ':''}}">
+      <text>选择会员</text>
+      <text>{{name}}  ></text>
+    </view>
+  </view>
+  <view class="list">
+    <view class="text-wrap {{leftbool?'active ':''}}" bindtap="leftdata" id="left">
+      <text>录入左侧数据</text>
+      <text> {{leftbool?"已完成 ":"未完成 "}} ></text>
+    </view>
+  </view>
+  <view class="list" >
+    <view class="text-wrap {{rightbool?'active ':''}}" bindtap="leftdata" id="right">
+      <text>录入右侧数据</text>
+      <text> {{rightbool?"已完成 ":"未完成 "}} ></text>
+    </view>
+  </view>
+</view>
+<view class="btn-box" bindtap="submit">
+    确认提交
+</view>

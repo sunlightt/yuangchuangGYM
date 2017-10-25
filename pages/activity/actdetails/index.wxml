@@ -1,0 +1,36 @@
+
+<view class="activity">
+    <view class="food-head">
+        <image class="food-icon" src="/resources/img/activity.png"></image>
+        <text class="food-title">活动</text>
+        <text class="food-time">{{acti_data.details.create_time}}</text>
+    </view>
+    <view class="activity-title">{{begin}}-{{end}} {{acti_data.details.title}}</view>
+    <view class="map-box">
+        <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+    </view>
+    <view class="activity-info">
+        <image src="/resources/img/map-symbol.png"></image>
+        <text class="activity-address">{{acti_data.details.location}}</text>
+        <text class="activity-time">{{begin}} {{day}}天</text>
+    </view>
+    <view class="praise">
+        <view class="praise-icon">
+            <image data-id="{{acti_data.id}}" catchtap="thumb" src="/resources/img/praise.png"></image>
+            <text>点赞<text class="praise-number">{{thumlist.count}}</text>+</text>
+        </view>
+        <view class="praise-people">
+            <image wx:for="{{thumlist.list}}" src="{{item.head_figure}}"></image>
+        </view>
+    </view>
+    <view class="commnet-box">
+        <view class="comment-list" wx:for="{{commlist}}" wx:for-item="comment">
+            <text class="comment-name">{{comment.nick_name}}：</text>
+            <text>{{comment.content}}</text>
+        </view>
+        <view class="input-box">
+            <input maxlength="30" value="{{commentvalue}}" data-id="{{acti_data.id}}" bindconfirm="comment" class="" placeholder='评论不能超过30个字' confirm-type="send"></input>
+            <image src="/resources/img/commnet.png"></image>
+        </view>
+    </view>
+</view>

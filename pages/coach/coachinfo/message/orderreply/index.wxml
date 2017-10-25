@@ -1,0 +1,31 @@
+
+<view class="info-box">
+  <image class="figure_head" src="{{rplay_data.head_figure}}"></image>
+    <view class="">
+      {{rplay_data.nick_name}}
+    </view>
+</view>
+<view class="" style="text-align:center;color:#E84E41;font-size:100rpx; font-weight:600;margin-top:30rpx;">
+  我要约课
+</view>
+<view class="order-logo">
+  <image src="/resources/img/order.png"></image>
+</view>
+<view class="order-time">
+  <text>{{rplay_data.create_time}}</text>
+</view>
+<form bindsubmit="bindFormSubmit">
+  <view class="message-wrap">
+    <view class="message-box">
+      <textarea name="textarea" value="{{rplay_data.message}}" placeholder-style="font-size:30rpx" disabled />
+    </view>
+  </view>
+</form>
+<view class="btn-box">
+  <view class="refuse" bindtap="reply" id="0">
+    <view class="">拒绝</view>
+  </view>
+  <view class="agree" bindtap="reply" id="1">
+    <view class="">同意</view>
+  </view>
+</view>

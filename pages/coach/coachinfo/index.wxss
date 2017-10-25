@@ -1,0 +1,82 @@
+page{
+  padding:20rpx 10rpx;
+  background: #E4E4E4;
+  box-sizing:border-box;
+}
+.head-figure{
+  height: 160rpx;
+  line-height: 160rpx;
+  font-size: 30rpx;
+  background: #fff;
+  padding-left:40rpx;
+}
+.name{
+  margin-left:20rpx;
+}
+.link-figure{
+  float: right;
+  margin-right:40rpx;
+}
+.figure{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.list{
+  font-size: 30rpx;
+  background: #fff;
+}
+.coachinfo-img{
+  float: right;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.coachinfo-img image{
+  width:70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right:20rpx;
+}
+
+
+.text-wrap{
+  margin-left:40rpx;
+  border-bottom:1px solid #eee;
+  height:112rpx;
+  line-height: 112rpx;
+  padding-right:40rpx;  
+}
+.list text:nth-child(1){
+  float: left;
+}
+.list text:nth-child(2){
+  float:right; 
+}
+.prompt{
+  width:100%;
+  background: #fff;
+  height: 70rpx;
+  padding-right: 20rpx;
+  box-sizing:border-box;
+}
+.prompt text{
+  height: 78rpx;
+  line-height: 80rpx;
+  font-size: 22rpx;
+  color:#959595;
+  float:right;
+}
+.savebtn{
+  padding:10rpx 20rpx;
+  color:#fff;
+  background: #00c79c;
+  font-size: 28rpx;
+}
+.saveinput input{
+  font-size: 28rpx;
+  padding:5rpx 20rpx; 
+  width:100%;
+  border-bottom:1px solid #00c79c;
+}

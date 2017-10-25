@@ -1,0 +1,34 @@
+
+<view class="list-box">
+  <view class="list" bindtap="settime">
+    <view class="text-wrap">
+      <text>安排时间</text>
+      <text class="{{settime ? 'complete' :''}}">{{settime ? '已安排':'无'}}  ></text>
+    </view>
+  </view>
+  <view class="list">
+    <view class="text-wrap" bindtap="exercise">
+      <text>安排锻炼内容</text>
+     <text class="{{action ? 'complete' :''}}">{{action ? '已安排':'无'}}  ></text>
+    </view>
+  </view>
+  <view class="list">
+    <view class="text-wrap" bindtap="target">
+      <text>本节目标</text>
+     <text class="{{target ? 'complete' :''}}">{{action ? '已安排':'无'}}  ></text>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<view class="healthy-food">
+  <view class="title">有无营养餐食?</view>
+  <view class="">
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="first-radio"><radio value="1" checked='checked'/>  有</label>
+      <label><radio value="0"/>  无</label>  
+    </radio-group>
+  </view>
+</view>
+<view class="save-btn" bindtap="savebtn">
+  完成
+</view>

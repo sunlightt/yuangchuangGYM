@@ -1,0 +1,7 @@
+<form bindsubmit="savebtn">
+    <view class="wrap">
+        <text class="title">本节目标</text>
+        <textarea maxlength='-1' auto-height name="target"></textarea>
+        <button form-type='submit'>提交</button>
+    </view>
+</form>

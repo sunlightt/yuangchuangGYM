@@ -1,0 +1,6 @@
+.dynamic-wrap{
+    box-shadow:none;
+}
+.head  , .head-bg{
+    height:410rpx;
+}

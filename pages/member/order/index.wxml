@@ -1,0 +1,25 @@
+<view class="info-box">
+    <image class="figure_head" src="{{figure_head}}"></image>
+    <view class="">
+        {{name}}
+    </view>
+</view>
+<view class="" style="text-align:center;color:#E84E41;font-size:100rpx; font-weight:600;margin-top:30rpx;">
+    我要约课
+</view>
+<view class="order-logo">
+    <image src="/resources/img/order.png"></image>
+</view>
+<view class="order-time">
+    <text>{{replay_date}}</text>
+</view>
+<form bindsubmit="bindFormSubmit">
+    <view class="message-wrap">
+        <view class="message-box">
+            <textarea name="textarea" placeholder-style="font-size:30rpx" placeholder="留言写这里" />
+        </view>
+    </view>
+    <view class="order-btn">
+        <button form-type="submit" open-type="{{share}}"> 通知教练</button>
+    </view>
+</form>

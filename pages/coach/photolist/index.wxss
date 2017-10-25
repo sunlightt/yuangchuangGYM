@@ -1,0 +1,34 @@
+/* pages/photolist/photolist.wxss */
+.photo-box{
+  padding:0 2% 120rpx;
+  box-sizing: border-box;
+}
+.photo-list{
+  width:24%;
+  margin:0 0.5%;
+  height: 300rpx;
+  position:relative;
+  display:inline-block;
+}
+.photo-list image{
+    display:block;
+    width:100rpx;
+    height:100rpx;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+}
+
+.plus{
+    position:fixed;
+    bottom:20rpx;
+    left:0;
+    width:100%;
+}
+.plus image{
+     display:block;
+     width:90rpx;
+     height:90rpx;
+     margin:0 auto;
+}

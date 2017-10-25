@@ -1,0 +1,28 @@
+
+
+.wrap{
+   width:90%;
+   margin:30rpx auto 0;
+}
+.wrap .title{
+    display:block;
+    font:30rpx/80rpx '微软雅黑';
+    color:#333;
+    text-align:center; 
+}
+.wrap textarea{
+    width:100%;
+    border:1rpx solid #eee;
+    font:26rpx/38rpx '微软雅黑';
+    color:#333;
+    box-sizing:border-box;
+    text-indent:2em;
+    padding:10rpx;
+    min-height:200rpx; 
+}
+.wrap  button{
+     font:32rpx/70rpx '微软雅黑';
+     background:#8FC320;
+     margin-top:30rpx;
+     color:#fff;
+}

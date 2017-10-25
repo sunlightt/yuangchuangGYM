@@ -1,0 +1,23 @@
+<!--index.wxml-->
+ <view class="container" wx:if="{{onshow}}">
+    <view class="title-container">
+        <text>请选择角色</text>
+    </view>
+    <view class="title-des">
+        <text>角色不同，功能就不同，请谨慎选择!</text>
+    </view>
+    <view class="group-box">
+        <view class="group" data-index="1" bindtap="choicerole">
+            <image src="/resources/img/me.png"></image>
+            <text>会员</text>
+        </view>
+        <view class="group" data-index="2" bindtap="choicerole">
+            <image src="/resources/img/me.png"></image>
+            <text>教练</text>
+        </view>
+        <view class="group" data-index="3" bindtap="choicerole">
+            <image src="/resources/img/me.png"></image>
+            <text>老板</text>
+        </view>
+    </view> 
+</view> 

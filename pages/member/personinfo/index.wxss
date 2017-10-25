@@ -1,0 +1,85 @@
+page{
+  padding:30rpx 13rpx;
+  background: #E4E4E4;
+  box-sizing:border-box;
+}
+.head-figure{
+  height: 170rpx;
+  line-height: 170rpx;
+  font-size: 30rpx;
+  background: #fff;
+  padding-left:40rpx;
+}
+.name{
+  margin-left:38rpx;
+  font-size: 30rpx;
+}
+.link-figure{
+  float: right;
+  margin-right:30rpx;
+}
+.figure{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.list{
+  font-size: 30rpx;
+  background: #fff;
+}
+.person-coach-img{
+  float: right;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.person-coach-img image{
+  width:70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right:20rpx;
+}
+.line{
+  height: 16rpx;
+}
+
+.text-wrap{
+  margin-left:30rpx;
+  border-bottom:1px solid #eee;
+  height:110rpx;
+  line-height: 110rpx;
+  padding-right:30rpx;  
+}
+.list text:nth-child(1){
+  float: left;
+}
+.list text:nth-child(2){
+  float:right; 
+}
+.prompt{
+  width:100%;
+  background: #fff;
+  height: 78rpx;
+  padding-right: 20rpx;
+  box-sizing:border-box;
+}
+.prompt text{
+  height: 70rpx;
+  line-height: 80rpx;
+  font-size: 20rpx;
+  color:#959595;
+  float:right;
+}
+.savebtn{
+  padding:10rpx 20rpx;
+  color:#fff;
+  background: #00c79c;
+  font-size: 28rpx;
+}
+.saveinput input{
+  font-size: 28rpx;
+  padding:5rpx 20rpx; 
+  width:100%;
+  border-bottom:1px solid #00c79c;
+}

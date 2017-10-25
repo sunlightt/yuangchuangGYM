@@ -1,0 +1,15 @@
+
+<view class="parent">
+      <text class="title">请输入您要绑定的手机</text>
+      <form bindsubmit='submit'>
+           <view class="item">
+                <text>手机号码</text>
+                <input name="number"></input>
+           </view>
+           <view class="item">
+                <text>再次输入</text>
+                <input name="rnumber"></input>
+           </view>
+           <button form-type='submit'>绑定手机</button>
+      </form>
+</view>

@@ -1,0 +1,11 @@
+<view class="list-box">
+  <view class="list" wx:for="{{list}}" data-index="{{index}}" data-bought="{{item.bought_class}}" data-id="{{item.member_id}}" data-nick_name="{{item.nick_name}}" data-rest_calass="{{item.rest_of_class}}" bindtap="membermanage">
+    <view class="head-figure">
+        <image src="{{item.head_figure}}"></image>
+    </view>
+    <view class="name">
+      <text>{{item.nick_name}}</text>
+      <text class="lesson-number">共{{item.bought_class}}节  剩余{{item.rest_of_class}}节</text>
+    </view>
+  </view>
+</view>

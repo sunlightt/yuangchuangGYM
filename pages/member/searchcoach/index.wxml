@@ -1,0 +1,8 @@
+<view class="search-box">
+    <image class="search-img" src="/resources/img/search.png"></image>
+    <input bindinput="bindKeyInput" placeholder="请输入手机号进行查询" />
+</view>
+<view data-id="{{item.uuid}}" data-phone="{{phone_num}}" bindtap="briefinfo" class="list" wx:for="{{list}}">
+    <image src="{{item.head_figure}}"></image>
+    <text>{{item.nick_name}}</text>
+</view>

@@ -1,0 +1,34 @@
+<view class="parent">
+    <view class="section">
+        <view class="item" data-index="0" bindtap="modify">
+            <text class="left">胸围</text>
+            <text class="left">{{bodyvalue[0]}}cm</text>
+        </view>
+        <view class="item" data-index="1" bindtap="modify">
+            <text class="left">腰围</text>
+            <text class="left">{{bodyvalue[1]}}cm</text>
+        </view>
+        <view class="item" data-index="2" bindtap="modify">
+            <text class="left">臀围</text>
+            <text class="left">{{bodyvalue[2]}}cm</text>
+        </view>
+        <view class="item" data-index="3" bindtap="modify">
+            <text class="left">体重</text>
+            <text class="left">{{bodyvalue[3]}}kg</text>
+        </view>
+        <view class="item" data-index="4" bindtap="modify">
+            <text class="left">BMI</text>
+            <text class="left">{{bodyvalue[4]}}</text>
+        </view>
+        <view class="item" data-index="5" bindtap="modify">
+            <text class="left">体脂率</text>
+            <text class="left">{{bodyvalue[5]}}%</text>
+        </view>
+    </view>
+    <view class="section">
+        <view class="item" bindtap="question" data-id="{{item.id}}" wx:for="{{question}}">
+            <text>{{item.title}}</text>
+        </view>
+    </view>
+    <button bindtap='submit'>确定</button>
+</view>

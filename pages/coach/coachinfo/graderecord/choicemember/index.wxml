@@ -1,0 +1,18 @@
+<radio-group class="radio-group" bindchange="radioChange">
+  <view class="list-box">
+    <label wx:for="{{list}}">
+      <view class="list">
+        <view class="head-figure">
+             <image src="{{item.head_figure}}"></image> 
+        </view>
+        <view class="name">
+          {{item.nick_name}}
+        </view>
+        <view class="right"><radio value="{{item.member_id}}"/></view>
+    </view>
+    </label>
+  </view>
+</radio-group>
+<view class="save-btn" bindtap="savebtn">
+  保存
+</view>

@@ -1,0 +1,16 @@
+<view class="list-box">
+  <view class="list" wx:for="{{list}}" bindtap="trainaction"  data-name="{{item.title}}" id="{{item.id}}">
+    <view class="text-wrap">
+      <text>{{item.title}}</text>
+      <text>  ></text>
+    </view>
+  </view>
+</view>
+<view class="plus-box">
+  <view class="image-box" bindtap="actiontype">
+    <image src="/resources/img/plus.png"></image>
+  </view>
+  <view class="image-text">
+    添加动作分类
+  </view>
+</view>

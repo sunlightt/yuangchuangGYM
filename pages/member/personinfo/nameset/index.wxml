@@ -1,0 +1,9 @@
+<view class="saveinput">
+    <input bindinput="bindKeyInput" type="text" focus value="{{name}}" />
+</view>
+<view class="name-title">
+    好的名字可以让你的朋友更容易记住你
+</view>
+<view class="savebtn">
+    <text bindtap="savebtn"t style="background:#00c79c;">保存</text>
+</view>

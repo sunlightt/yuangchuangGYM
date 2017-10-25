@@ -1,0 +1,34 @@
+<!--motto.wxml-->
+<view class="motto-type">
+    <view class="{{bool?'active':''}}" bindtap="active1">官方推荐</view>
+    <view class="{{bool?'':'active'}}" bindtap="active2">自己写</view>
+</view>
+<view class="list-box" wx:if="{{bool}}">
+    <radio-group class="radio-group" bindchange="radioChange">
+        <block wx:for="{{moto_list}}">
+            <label class="radio">
+                <radio value="{{item.moto}}" checked="{{itme.check}}" />  
+                <view class="motto-list {{item.check=='true' ? 'checked' : ''}}" data-index="{{index}}" bindtap="option">
+                    {{item.moto}}
+                </view>
+            </label>
+        </block>
+    </radio-group>
+</view>
+<view class="myself" wx:else>
+    <textarea></textarea>
+</view>
+<view class="" hidden>
+    <view class="saveinput">
+        <input type="text" focus value="{{name}}" />
+    </view>
+    <view class="name-title">
+        好的名字可以让你的朋友更容易记住你
+    </view>
+    <view class="savebtn">
+        <text>保存</text>
+    </view>
+</view>
+<view class="savebtn">
+    完成
+</view>

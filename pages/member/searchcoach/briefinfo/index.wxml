@@ -1,0 +1,32 @@
+<view class="info-box">
+    <image src="{{data.head_figure}}"></image>
+    <view class="name">{{data.nick_name}}</view>
+</view>
+<view class="list-box">
+    <view class="list">
+        <view class="text-wrap">
+            <text>健身房</text>
+            <text>{{data.store_title}}  ></text>
+        </view>
+    </view>
+    <view class="list">
+        <view class="text-wrap">
+            <text>手机号</text>
+            <text>{{phone}}  ></text>
+        </view>
+    </view>
+    <view class="list">
+        <view class="text-wrap" data-uuid="{{data.uuid}}" bindtap="tabcoach">
+            <text>详细资料</text>
+            <text>  ></text>
+        </view>
+    </view>
+</view>
+<view class="btn-box">
+    <view class="agree" bindtap="savebtn" wx:if="{{!onoff}}">
+        <view class="">签约</view>
+    </view>
+    <view class="agree" wx:if="{{onoff}}">
+        <view class="">已签约</view>
+    </view>
+</view>

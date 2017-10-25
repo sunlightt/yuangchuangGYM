@@ -1,0 +1,47 @@
+<template ></template>
+<view wx:for="{{array}}" class="list-time">
+  <view class="report-time">
+    {{item.create_time}}
+  </view>
+  <image src="/resources/img/body.png" class="yellow-body">
+  </image>
+  <view class="number-box">
+    <view class="body-number"></view>
+    <view class="body-number">
+      <view class="record-number">{{item.weight}}</view>
+      <view class="record-type">体重（kg）</view>
+    </view>
+    <view class="body-number"></view>
+  </view>
+  <view class="number-box">
+    <view class="body-number">
+      <view class="record-number">{{item.bust}}</view>
+      <view class="record-type">胸围（cm）</view>
+    </view>
+    <view class="body-number"></view>
+    <view class="body-number">
+      <view class="record-number">{{item. waist}}</view>
+       <view class="record-type">腰围（cm）</view>
+    </view>
+  </view>
+  <view class="number-box">
+    <view class="body-number">
+      <view class="record-number">{{item.hip_dimension}}</view>
+       <view class="record-type">臀围（cm）</view>
+    </view>
+    <view class="body-number"></view>
+    <view class="body-number">
+      <view class="record-number">{{item.body_fat_rate}}%</view>
+       <view class="record-type">体脂率</view>
+    </view>
+  </view>
+  <view class="number-box">
+    <view class="body-number"></view>
+    <view class="body-number">
+      <view class="record-number">{{item.bmi}}</view>
+       <view class="record-type">BMI</view>
+    </view>
+    <view class="body-number"></view>
+  </view>
+</view>
+

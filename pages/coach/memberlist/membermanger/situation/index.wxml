@@ -1,0 +1,18 @@
+<view class="list-box">
+    <view class="list" wx:for="{{listdata}}">
+        <view class="list-left">
+            <view class="order-number">{{index+1}}</view>
+            <view class="time">{{item.create_time}}</view>
+        </view>
+        <view class="list-right">
+            <view class="">
+                <text class="content">{{item.title}}</text>
+                <text class="type">训练部位</text>
+            </view>
+            <view class="">
+                <text class="content">{{item.feeding}}</text>
+                <text class="type">营养餐食</text>
+            </view>
+        </view>
+    </view>
+</view>

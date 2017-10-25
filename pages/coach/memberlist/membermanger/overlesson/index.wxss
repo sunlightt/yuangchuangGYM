@@ -1,0 +1,83 @@
+page{
+  background: #eee;
+}
+.title{
+  font-size: 30rpx;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 60rpx;
+  color: #7f7f7f;
+}
+.content{
+  width: 84%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 28rpx;
+  color: #7f7f7f;
+  margin-bottom: 130rpx;
+}
+.number-box{
+  width:96%;
+  height: 140rpx;
+  background: #fff;
+  margin: 0 auto;
+  display:flex;
+  position: relative;
+}
+.number{
+  margin: 0 auto;
+}
+.number input{
+  height: 140rpx;
+  line-height: 140rpx;
+  font-size: 30rpx;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.plus , .reduce{
+  position: absolute;
+  width:100rpx;
+  height: 100rpx;
+  top: 20rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.plus image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.plus{
+  left:50rpx;
+}
+.reduce{
+  right: 50rpx;
+}
+.reduce image{
+  width: 100rpx;
+  height: 100rpx;
+}
+textarea{
+  padding:21rpx 26rpx;
+  font-size: 28rpx;
+  width:100%;
+  box-sizing: border-box;
+}
+.text-box{
+  width: 96%;
+  height: 300rpx;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 70rpx;
+}
+.save-btn{
+  background: #B28850;
+  width: 96%;
+  margin: 0 auto;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 24rpx;
+} 

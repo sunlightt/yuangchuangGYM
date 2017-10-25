@@ -1,0 +1,222 @@
+/* courserecord.wxss */
+
+.head {
+    height: 500rpx;
+    position: relative;
+    color: #eee;
+    overflow: hidden;
+}
+
+.head-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0rpx;
+    top: 0rpx;
+    z-index: -1;
+}
+
+.gym-info {
+    margin-top: 50rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
+
+.course-number {
+    height: 390rpx;
+    display: flex;
+}
+
+.all-course {
+    height: 390rpx;
+    flex: 2;
+}
+
+.all-course view {
+    text-align: center;
+    font-size: 34rpx;
+}
+
+.rest-course {
+    height: 390rpx;
+    flex: 3;
+    position: relative;
+}
+
+.rest-course view {
+    text-align: center;
+    font-size: 34rpx;
+}
+
+.progress-box {
+    position: absolute;
+    width: 100%;
+    height: 390rpx;
+    left: 0rpx;
+    top: 0rpx;
+}
+
+canvas {
+    width: 100%;
+    height: 390rpx;
+}
+
+.course-number .number {
+    font-size: 70rpx;
+    height: 200rpx;
+    line-height: 280rpx;
+}
+
+.course-number .first {
+    color: #959595;
+}
+
+.record-plan {
+    display: flex;
+    height: 152rpx;
+}
+
+.record-plan view {
+    height: 152rpx;
+    line-height: 152rpx;
+    text-align: center;
+    flex: 1;
+    font-size: 29rpx;
+    color: #757575;
+}
+
+.record-plan image {
+    width: 30rpx;
+    height: 26rpx;
+    vertical-align: middle;
+    margin-top: -4rpx;
+    margin-left: 24rpx;
+}
+
+.list {
+    position: relative;
+    padding-left: 160rpx;
+    height: 200rpx;
+    box-shadow: 0rpx -2rpx 16rpx rgba(33, 33, 33, 0.2);
+    margin-bottom: 34rpx;
+}
+
+.list-left {
+    width: 160rpx;
+    height: 200rpx;
+    position: absolute;
+    left: 0rpx;
+    top: 0rpx;
+    text-align: center;
+}
+
+.list-right {
+    height: 200rpx;
+}
+
+.list-right view {
+    height: 70rpx;
+    line-height: 120rpx;
+}
+
+.order-number {
+    font-size: 80rpx;
+    color: #333;
+    height: 122rpx;
+    line-height: 140rpx;
+}
+
+.time {
+    font-size: 26rpx;
+    color: #959595;
+    height: 50rpx;
+    line-height: 50rpx;
+}
+
+.type {
+    float: right;
+    color: #959595;
+    font-size: 26rpx;
+    height: 100%;
+    margin-right: 12rpx;
+    line-height: 70px;
+}
+
+.content {
+    font-size: 30rpx;
+}
+
+.plan {
+    margin-bottom: 60rpx;
+}
+
+.plan-time {
+    height: 46rpx;
+    line-height: 46rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 0;
+    transform: translateY(-50%);
+    color: #959595;
+    background: #fff100;
+    border-radius: 10rpx;
+    padding: 0rpx 40rpx;
+    font-size: 28rpx;
+}
+
+.plan-box {
+    width: 96%;
+    margin: 0 auto;
+    box-shadow: -4rpx -2px 8rpx rgba(33, 33, 33, 0.1);
+    margin-top: 20rpx;
+    padding-top: 70rpx;
+    position: relative;
+}
+
+.record-list {
+    width: 33.3%;
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 60rpx;
+}
+
+.record-list view {
+    text-align: center;
+}
+
+.record-number {
+    font-size: 70rpx;
+    line-height: 60rpx;
+    color: #343434;
+}
+
+.record-text {
+    font-size: 28rpx;
+    color: #959595;
+    margin-top: 40rpx;
+}
+
+.question-list {
+    text-align: center;
+    font-size: 40rpx;
+    margin-bottom: 44rpx;
+}
+
+.question-list image {
+    vertical-align: middle;
+    margin-top: -6rpx;
+    width: 28rpx;
+    height: 34rpx;
+    margin-left: 20rpx;
+}
+
+/*change  */
+
+.gym-info  image{
+    width: 18rpx;
+    height: 26rpx;
+    transform: translateY(10%);
+    margin-right: 8rpx;
+}

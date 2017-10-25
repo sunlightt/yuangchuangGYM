@@ -1,0 +1,23 @@
+<!--coachlist.wxml-->
+<view class="list">
+    <view class="item" wx:for="{{order_data}}" bindtap="unsigning">
+        <view class="coach-head">
+            <image src="{{item.head_figure}}"></image>
+        </view>
+        <view class="coach-info">
+            <view class="coach-box">
+                <text class="coach-name">{{item.nick_name}}</text>
+                <text class="coach-time">2017-4-17  16:34</text>
+            </view>
+            <view class="coach-gym">
+                {{item.store_title}}
+            </view>
+        </view>
+        <view class="cancel" >
+            <view class="delete-coach">解约</view>
+            <view class="cancel-img">
+                <image src="/resources/img/delete.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

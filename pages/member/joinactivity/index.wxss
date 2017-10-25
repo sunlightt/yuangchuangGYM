@@ -1,0 +1,153 @@
+/* pages/joinactivity/joinactivity.wxss */
+
+page {
+    background: #eee;
+    padding-bottom: 60rpx;
+}
+
+.content {
+    width: 94%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 0px 14rpx rgba(33, 33, 33, 0.2);
+    margin-top: 20rpx;
+    padding-top: 40rpx;
+    padding-bottom: 40rpx;
+}
+
+.title {
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    background: #bd1335;
+    line-height: 60rpx;
+    font-size: 34rpx;
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+
+.content-list {
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    text-align: center;
+    margin-top: 6rpx;
+}
+
+.content-list image {
+    width: 34rpx;
+    height: 45rpx;
+    margin-right: 16rpx;
+}
+
+.activity-des {
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    background: #bd1335;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    text-align: center;
+    margin-bottom: 30rpx;
+    margin-top: 60rpx;
+}
+
+.activity-des image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 48rpx;
+    vertical-align: middle;
+    margin-top: -6rpx;
+}
+
+.des-content {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 20rpx;
+    line-height: 50rpx;
+    font-size: 30rpx;
+    text-align: justify;
+}
+
+.map-box {
+    width: 100%;
+    height: 360rpx;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.big-img {
+    width: 96%;
+    margin-left: 2%;
+    height: 380rpx;
+    background: #e5e5e5;
+}
+.big-img image , .img-list image{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.img-box {
+    margin-top: 3%;
+    overflow: hidden;
+}
+
+.img-list {
+    width: 22.5%;
+    height: 160rpx;
+    margin-left: 2%;
+    float: left;
+    background: #e5e5e5;
+}
+
+.savebtn {
+    width: 200rpx;
+    margin: 0 auto;
+    background: #bd1335;
+    color: #fff;
+    font-size: 34rpx;
+    line-height: 74rpx;
+    position: relative;
+    text-align: center;
+    margin-top: 40rpx;
+}
+
+.savebtn image {
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    top: -14rpx;
+    right: -100rpx;
+}
+
+.number-box {
+    width: 200rpx;
+    text-align: center;
+    border-radius: 12rpx;
+    background: #bdbdbd;
+    margin: 0 auto;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-top: 40rpx;
+}
+
+.join-box {
+    width: 84%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30rpx;
+    margin-bottom: 60rpx;
+}
+
+.join-box image {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    margin-right: 14rpx;
+    margin-top: 14rpx;
+    float: left;
+}
+
+.parent{
+    padding-bottom:140rpx;
+}

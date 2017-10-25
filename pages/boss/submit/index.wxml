@@ -1,0 +1,20 @@
+<view class="parent">
+    <view class="title">
+        <text>提交工商资料</text>
+    </view>
+    <text class="inf">请按如下要求按实上传您的工商资料，\n 如发现虚假资料，系统将随时冻结账号</text>
+    <form bindsubmit='submit'>
+        <input name="username" placeholder='输入法人姓名'></input>
+        <input name="id" placeholder='输入法人身份证号'></input>
+        <input name="number" placeholder='输入法人手机号'></input>
+        <view class="upimg">
+             <view class="img" bindtap="upimg">
+                  <image src="{{imgurls}}"></image>
+             </view>
+             <view class="msg">
+                  <text>营业执照照片，大小不超过1M</text>
+             </view>
+        </view>
+        <button form-type='submit'>下一步</button>
+    </form>
+</view>

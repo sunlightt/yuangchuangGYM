@@ -1,0 +1,22 @@
+.form-box{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50tpx;
+}
+.form-box input{
+  border: 1px solid #eee;
+  width: 100%;
+  padding: 14rpx 6rpx;
+  margin-top: 40rpx; 
+}
+.savebtn{
+  width: 386rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background: #00BF00;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: 50rpx;
+  margin-bottom:30rpx;
+}

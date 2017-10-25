@@ -1,0 +1,59 @@
+/**index.wxss**/
+
+.container {
+    background-color: #fff100;
+    height: 100%;
+}
+
+.title-container {
+    text-align: center;
+    color: black;
+    font-size: 34rpx;
+    font-weight: 700;
+    padding-top: 100px;
+}
+
+.title-des {
+    text-align: center;
+    font-size: 26rpx;
+    color: #1c1906;
+    padding-top: 24px;
+}
+
+.group {
+    padding-top: 100px;
+}
+
+.title-des {
+    text-align: center;
+    font-size: 26rpx;
+    color: #1c1906;
+    padding-top: 24px;
+}
+
+.group-box {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 0px 5%;
+}
+
+.group image {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.group {
+    width: 33.3%;
+    text-align: center;
+}
+
+.group text {
+    width: 80rpx;
+    padding: 3px 5px;
+    border-radius: 2px;
+    display: block;
+    background: #fff;
+    font-size: 24rpx;
+    margin: 0 auto;
+}

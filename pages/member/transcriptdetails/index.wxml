@@ -1,0 +1,64 @@
+<!--成绩单  -->
+<block>
+    <view class="line"></view>
+    <view class="grade-box">
+        <view class="food-head">
+            <image class="food-icon" src="/resources/img/activity.png"></image>
+            <text class="food-title">成绩单</text>
+            <!-- <text class="food-time">2017-4-17 18:30</text> -->
+        </view>
+        <view class="grade-report" >
+            <view class="before-box" >
+                <view class="body-number">
+                    <view class="before-time">{{transcript_list.details.content[0].create_time}}</view>
+                    <view class="weight-box">
+                        <view>体重:{{transcript_list.details.content[0].weight}}kg</view>
+                        <view>三围:{{transcript_list.details.content[0].three_dimension}}</view>
+                    </view>
+                    <view class="weight-box">
+                        <view>BMI:{{transcript_list.details.content[0].bmi}}</view>
+                        <view>体型:过重</view>
+                    </view>
+                </view>
+                <view id="leftimg" class="body-img" >
+                    <image src="{{imgurl+transcript_list.details.content[0].photo}}" bindtap="previewImg" data-viewsrc="{{imgurl+transcript_list.details.content[0].photo}}"></image>
+                </view>
+            </view>
+            <view class="before-box">
+                <view class="body-number">
+                    <view class="before-time">{{transcript_list.details.content[1].create_time}}</view>
+                    <view class="weight-box">
+                        <view>体重:{{transcript_list.details.content[1].weight}}kg</view>
+                        <view>三围:{{transcript_list.details.content[1].three_dimension}}</view>
+                    </view>
+                    <view class="weight-box">
+                        <view>BMI:{{transcript_list.details.content[1].bmi}}</view>
+                        <view>体型:过重</view>
+                    </view>
+                </view>
+                <view id="rightimg" class="body-img" >
+                    <image src="{{imgurl+transcript_list.details.content[1].photo}}" bindtap="previewImg" data-viewsrc="{{imgurl+transcript_list.details.content[0].photo}}"></image>
+                </view>
+            </view>
+        </view>
+        <view class="praise">
+            <view class="praise-icon">
+                <image data-id="{{transcript_list.id}}" catchtap="thumb" src="/resources/img/praise.png"></image>
+                <text>点赞<text class="praise-number">{{thumlist.count}}</text>+</text>
+            </view>
+            <view class="praise-people">
+                <image wx:for="{{thumlist.list}}" src="{{item.head_figure}}"></image>
+            </view>
+        </view>
+        <view class="commnet-box">
+            <view class="comment-list" wx:for="{{commlist}}" wx:for-item="comment">
+                <text class="comment-name">{{comment.nick_name}}：</text>
+                <text>{{comment.content}}</text>
+            </view>
+            <view class="input-box">
+                <input maxlength="30" value="{{commentvalue}}" data-id="{{transcript_list.id}}" bindconfirm="comment" class="" placeholder='评论不能超过30个字' confirm-type="send"></input>
+                <image src="/resources/img/commnet.png"></image>
+            </view>
+        </view>
+    </view>
+</block>

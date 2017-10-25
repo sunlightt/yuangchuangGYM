@@ -1,0 +1,47 @@
+<!--leftData.wxml-->
+<form>
+    <view class="list">
+        <view class="type">体重(kg)</view>
+        <view class="type-number">
+            <input bindinput="bindKeyInput" value="{{prpdata.weight}}" placeholder='单位kg' id="weight" type="number" />
+        </view>
+    </view>
+    <view class="list">
+        <view class="type">身高</view>
+        <view class="type-number">
+            <input bindinput="bindKeyInput" value="{{prpdata.tall}}" placeholder='单位cm' id="tall" type="number" />
+        </view>
+    </view>
+    <view class="list">
+        <view class="type">胸围</view>
+        <view class="type-number">
+            <input bindinput="bindKeyInput" value="{{prpdata.bust}}"  placeholder='单位cm' id="bust" type="text" />
+        </view>
+    </view>
+    <view class="list">
+        <view class="type">腰围</view>
+        <view class="type-number">
+            <input bindinput="bindKeyInput" value="{{prpdata.waist}}"  placeholder='单位cm' id="waist" type="text" />
+        </view>
+    </view>
+    <view class="list">
+        <view class="type">臀围</view>
+        <view class="type-number">
+            <input bindinput="bindKeyInput" value="{{prpdata.hipline}}"  placeholder='单位cm' id="hipline" type="text" />
+        </view>
+    </view>
+    <view class="list">
+         <view class="type">时间</view>
+         <picker mode="date" id="start" value="{{starttime}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="time">
+                <input bindinput="bindKeyInput" value="{{starttime}}" id="date" type="number" />
+            </view>
+        </picker>
+    </view>
+
+    <view class="upimg">
+        <image src="{{imgsrc}}" id="rightimg"  bindtap="choiceimg"></image>
+    </view>
+
+    <view class="save-btn" bindtap="bindsavebtn">保存</view>
+</form>

@@ -1,0 +1,52 @@
+.list{
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.type{
+  width: 200rpx;
+  text-align: justify;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  height: 60rpx;
+  line-height: 60rpx;
+  float: left;
+  font-size: 30rpx;
+  text-align-last: justify;
+}
+.type-number{
+  margin-left: 180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+input{
+  border: 1px solid #eee;
+  padding: 6rpx 16rpx;
+  font-size: 28rpx;
+  height: 60rpx;
+  box-sizing: border-box;
+}
+.save-btn{
+  margin-top: 30rpx;
+  text-align: center;
+  background: #ffff00;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  width: 90%;
+  margin: 20rpx auto;
+}
+.upimg{
+   width:80%;
+   margin:20rpx auto 0;
+   display:flex;
+   flex-direction:row;
+}
+.upimg image{
+    display:block;
+    height:480rpx;
+    width:45%;
+}
+

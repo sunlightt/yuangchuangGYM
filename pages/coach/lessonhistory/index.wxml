@@ -1,0 +1,21 @@
+<view class="lesson-plus">
+  <view class="bulge"></view>
+  <view class="thunder">
+    <image src="/resources/img/thunder.png"></image>
+  </view>
+  <view class="all-lesson-number">
+    <view class="all-number">{{history}}节</view>
+    <view class="">所有会员课时综合</view>
+  </view>
+</view>
+<view class="list-box">
+  <view class="list" wx:for="{{list}}" data-bought="{{item.bought_class}}" data-rest="{{item.rest_of_class}}" data-id="{{item.member_id}}" bindtap="bindmembermanage">
+    <view class="head-figure">
+        <image src="{{item.head_figure}}"></image>
+    </view>
+    <view class="name">
+      <text>{{item.nick_name}}</text>
+      <text class="lesson-number">{{item.bought_class}}节</text>
+    </view>
+  </view>
+</view>

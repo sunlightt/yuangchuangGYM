@@ -1,0 +1,20 @@
+
+<view class="list-box">
+  <view class="list" wx:for="{{list}}">
+    <view class="text-wrap">
+      <text>{{item.title}}</text>
+      <text>  ></text>
+    </view>
+  </view>
+</view>
+<view class="plus-box" bindtap="addaction">
+  <view class="image-box">
+    <image src="/resources/img/plus.png"></image>
+  </view>
+  <view class="image-text">
+    添加训练动作
+  </view>
+</view>
+<view class="save-btn" bindtap="savebtn">
+  保存
+</view>

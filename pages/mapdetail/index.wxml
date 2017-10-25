@@ -1,0 +1,12 @@
+<!--mapdetail.wxml-->
+<map />
+<view class="">
+  <view class="">
+    4月22日至4月23日  密云烧烤
+  </view>
+  <view class="">
+    北京淮北镇大水峪村
+  </view>
+  <view class="">2017年4月23日  两天</view>
+</view>
+

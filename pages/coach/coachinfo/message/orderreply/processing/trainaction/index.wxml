@@ -1,0 +1,14 @@
+<checkbox-group name="checkbox" bindchange="checkboxChange">
+    <view class="list-box" wx:for="{{list}}">
+        <label class="checkbox">
+          <checkbox data-id="{{item.id}}" value="{{item.id}}" checked="{{item.checked}}"/>{{item.title}}
+        </label>
+        <view class="action-number">
+            几组 <input data-name="group" bindinput="bindKeygroup" data-id="{{item.id}}" /> 每组几个
+            <input data-name="length" bindinput="bindKeylength" data-id="{{item.id}}" />
+        </view>
+    </view>
+</checkbox-group>
+<view class="savebtn" bindtap='savebtn'>
+    保存
+</view>

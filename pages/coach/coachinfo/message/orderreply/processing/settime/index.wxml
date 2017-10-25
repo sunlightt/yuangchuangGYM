@@ -1,0 +1,34 @@
+<!--settime.wxml-->
+<view class="time-box">
+    <view class="time-list">
+        <picker mode="time" id="start" value="{{starttime}}" start="12:01" end="23:59" bindchange="bindTimeChange">
+            <view class="time">
+                开始时间: <text>{{starttime}}</text>
+            </view>
+        </picker>
+    </view>
+    <view class="time-list">
+        <picker mode="time" id="end" value="{{endtime}}" start="12:01" end="23:59" bindchange="bindTimeChange">
+            <view class="time">
+                结束时间: <text>{{endtime}}</text>
+            </view>
+        </picker>
+    </view>
+</view>
+<view class="save-btn" bindtap="savetime">
+    完成
+</view>
+
+<view class="no-time">已预约时间段</view>
+
+<view class="list-box">
+    <view class="list" bindtap="bindmembermanage" wx:for="{{order}}">
+        <view class="head-figure">
+            <image src="{{item.head_figure}}"></image>
+        </view>
+        <view class="name">
+            <text>{{item.nick_name}}</text>
+            <text class="lesson-number">{{item.begin_hour}}-{{item.end_hour}}</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+<view class="photo-box">
+  <view class="photo-list" bindtap="upimg">
+        <image src="/resources/img/borderplus.png"></image>
+  </view> 
+  <image wx:for="{{photo_list}}" data-id="{{item.id}}" bindtouchstart="mytouchstart" bindtouchend="mytouchend" src="{{item.img_url}}" class="photo-list" data-src="{{item.img_url}}" bindtap="clickimg"></image>
+</view>
+

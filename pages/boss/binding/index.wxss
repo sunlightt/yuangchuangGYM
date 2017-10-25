@@ -1,0 +1,33 @@
+
+.parent{
+    padding:10% 4% 0;
+}
+.parent .title{
+    display:block;
+    font:30rpx/50rpx '微软雅黑';
+    color:#333;
+    text-align:center;
+}
+.item{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    width:80%;
+    margin:40rpx auto;
+}
+
+.item input{
+    border:1rpx solid #333;
+    font:30rpx/60rpx '微软雅黑';
+    color:#333;
+    margin-left:20rpx;
+    flex:2;
+}
+
+button{
+     width:408rpx;
+     font:30rpx/80rpx '微软雅黑';
+     color:#333;
+     margin:0 auto;
+     background:#fff100;
+}

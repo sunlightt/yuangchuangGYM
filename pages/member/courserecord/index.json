@@ -1,0 +1,21 @@
+{
+    "tabBar": {
+        "color": "#c5c5c5",
+        "selectedColor": "#000",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "../home/home",
+                "text": "主页",
+                "iconPath": "/resources/img/home.png",
+                "selectedIconPath": "/resources/img/home.png"
+            },
+            {
+                "pagePath": "../gym/gym",
+                "text": "健身房",
+                "iconPath": "/resources/img/gym.png",
+                "selectedIconPath": "/resources/img/gym.png"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+<view class="list">
+    <view class="item" bindtap="unsigning" wx:if="{{data && !default}}">
+        <view class="coach-head">
+            <image src="{{imgurl+data.pictures}}"></image>
+        </view>
+        <view class="coach-info">
+            <view class="coach-gym">
+                {{data.store_title}}
+            </view>
+        </view>
+        <view class="cancel" >
+            <view class="delete-coach">解约</view>
+            <view class="cancel-img">
+                <image src="/resources/img/delete.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

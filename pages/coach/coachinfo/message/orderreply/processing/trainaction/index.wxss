@@ -1,0 +1,33 @@
+page{
+  background: #eee;
+  font-size: 30rpx;
+  padding-bottom: 40rpx;
+  box-sizing:border-box;
+}
+.list-box{
+  background: #fff;
+  padding:30rpx 40rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+.action-number input{
+  width:160rpx;
+  display: inline-block;
+  border-bottom: 1rpx solid #666;
+  height: 60rpx;
+  line-height:60rpx;
+  text-align: center;
+}
+.savebtn{
+  width:90%;
+  margin:0 auto;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  color:#fff;
+  background: #8FC320;
+  text-align: center;
+  margin-top: 50rpx;
+  border-radius: 8rpx;
+}
+

@@ -1,0 +1,37 @@
+.search-box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20rpx 0rpx;
+}
+
+input {
+    margin-left: 65rpx;
+    border-bottom: 1px solid #eee;
+    font-size: 30rpx;
+}
+
+.list {
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 80rpx;
+}
+
+.list image {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 30rpx;
+    margin-top: -14rpx;
+}
+
+.search-img {
+    width: 40rpx;
+    height: 40rpx;
+    float: left;
+    vertical-align: middle;
+    margin-top: 4rpx;
+}

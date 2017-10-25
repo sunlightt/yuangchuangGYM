@@ -1,0 +1,13 @@
+<!-- <view class="title">
+    请输入你要绑定的手机号
+</view>
+<view class="phone-number">
+    <text>手机号码 </text>
+    <input type="number" bindinput="bindKeyInput" />
+</view>
+<view class="phone-number1">
+    <text>再次输入 </text><input type="number" bindinput="bindKeyInput1" />
+</view>
+<view class="btn">
+    <text bindtap="submit">绑定手机</text>
+</view> -->

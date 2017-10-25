@@ -1,0 +1,6 @@
+<view class="saveinput">
+    <input bindinput="bindKeyInput" type="text" focus value="{{name}}" />
+</view>
+<view class="savebtn">
+    <text bindtap="savebtn">保存</text>
+</view>

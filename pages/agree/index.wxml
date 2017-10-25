@@ -1,0 +1,9 @@
+<view class="">
+    <view class="form-box">
+        <input type="text" data-type="bought" placeholder='已购买的课程数量' class="" bindinput="bindKeyInput"></input>
+        <input type="text" data-type="rest_of" class="" placeholder='剩余课程数量' bindinput="bindKeyInput"></input>
+    </view>
+    <view class="savebtn" bindtap="savebtn">
+        提交
+    </view>
+</view>

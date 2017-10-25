@@ -1,0 +1,339 @@
+/* pages/coachhome/coachhome.wxss */
+.head{
+  box-sizing: border-box;
+  position:relative;
+  height:340rpx;
+  top:0;
+  left:0;
+}
+.head-bg{
+  width:100%;
+  height: 340rpx;
+  position: absolute;
+  top: 0rpx;
+  left:0rpx;
+  z-index: -1;
+}
+.head-img{
+  padding-top: 61rpx;
+  text-align: center;
+}
+.head-img image{
+  width:130rpx;
+  height: 130rpx;
+  border-radius:50%;
+  display: block;
+  margin: 0 auto;
+}
+.coachbg{
+  width: 100%;
+  height: 340rpx;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  display:block; 
+}
+.name,.work-name{
+  text-align: center;
+}
+.name{
+  color:#fff;
+  font-size:30rpx;
+  margin-top:15rpx;
+}
+.work-name{
+  font-size: 34rpx;
+  color:#f7f7f7;  
+  margin-top:13rpx;
+}
+.work-name image{
+  width: 30rpx;
+  height: 41rpx;
+  vertical-align: middle;
+  margin-right: 12rpx;
+  margin-top: -8rpx;
+}
+.list-wrap{
+  width:100%;
+  display: flex;
+  height:auto;
+  border-bottom:none;
+}
+.list{
+  height: 198rpx;
+  flex: 1;
+  border-left: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+}
+.list-number{
+  height: 130rpx;
+  line-height: 136rpx;
+  text-align: center;
+  font-size: 80rpx;
+  color: #323433;
+}
+.list-number image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.list-type{
+  height: 72rpx;
+  text-align: center;
+  font-size: 29rpx;
+  color: #959595;
+}
+.today .list-number{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 29rpx;
+  color: #959595;
+}
+.today .list-type{
+  height: 120rpx;
+  line-height: 140rpx;
+}
+.today-yesterday{
+  height: 96rpx;
+}
+.today-yesterday view{
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 96rpx;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #eee;
+  color:#959595;
+}
+.today-yesterday view.active{
+  background: #ffff00;
+  color:#000;
+}
+.today-yesterday image{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -12rpx;
+  margin-left: 27rpx;
+}
+.today-yesterday .yesterday image{
+  width: 56rpx;
+}
+
+.time{
+  text-align: center;
+  font-size: 32rpx;
+  margin-top:100rpx;
+  margin-bottom: 65rpx;
+  font-weight: 600;
+  color:#959595;
+}
+.member-list-box{
+  padding: 0rpx 10rpx;
+  box-sizing: border-box;
+}
+.member-list{
+  position: relative;
+  margin-left:136rpx;
+  padding-right:130rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+}
+.last-time{
+  float: right;
+  line-height: 60rpx;
+}
+.healthy-food{
+  float: right;
+  font-size: 24rpx;
+  height: 60rpx;
+  line-height: 38rpx;
+  vertical-align: middle;
+  color: #D0D0D0;
+}
+.member-list view{
+  height: 60rpx;
+  line-height: 70rpx;
+}
+.member-list .name-box{
+  line-height: 30rpx;
+}
+.member-name{
+  font-size: 32rpx;
+  color:rgba(32,34,34,0.66);
+}
+.member-time{
+  
+}
+.last-time{
+  font-size: 26rpx;
+  color:#959595;
+}
+.member-list .member-img{
+  position: absolute;
+  left:-120rpx;
+  top:50%;
+  transform: translateY(-50%);
+  width:100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.member-img image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.member-list .pen{
+  width:80rpx;
+  height: 70rpx;
+  position: absolute;
+  right: 10rpx;
+  top:50%;
+  transform:translateY(-50%);
+}
+.photo-box{
+  padding:0 2%;
+  box-sizing: border-box;
+}
+.photo-title{
+  position: relative;
+}
+.photo-list{
+  width:24%;
+  margin:0 0.5%;
+  height: 300rpx;
+}
+.photo-symbol{
+  width:40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.photo-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  box-shadow: 0rpx -3rpx 6rpx rgba(30,30,30,0.1);
+  margin-top: 20rpx;
+}
+.photo-list text{
+  color:#959595;
+  font-size: 30rpx;
+}
+
+
+.see-all{
+  position: absolute;
+  right: 40rpx;
+  top:50%;
+  transform: translateY(-50%);
+}
+.grade-box{
+  box-shadow: 0rpx -10rpx 16rpx rgba(50,50,50,0.1);
+  margin-top: 50rpx;
+}
+.before-box{
+  width:50%;
+  margin: 0 5rpx;
+}
+.before-time{
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 33rpx;
+}
+.body-number{
+  box-sizing: border-box;
+  padding-top: 14rpx;
+  background: #000;
+  color:#fff;
+}
+.body-number view{
+  text-align: center;
+}
+.body-img image{
+  width:100%;
+  height: 480rpx;
+}
+.weight-box{
+  display: flex;
+}
+.weight-box view{
+  flex: 1;
+  text-align: center;
+  font-size: 18rpx;
+  line-height: 50rpx;
+}
+.grade-report{
+  box-sizing: border-box;
+  padding:0 20rpx;
+  display: flex;
+}
+.grade-report view{
+  flex: 1;
+}
+.food-head{
+  border-bottom: 0px;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.info-name{
+  font-size: 25rpx;
+}
+.student-dynamic{
+  /* box-shadow: 0rpx -8rpx 16rpx rgba(50,50,50,0.1); */
+  box-shadow:none;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+}
+.info{
+  margin-top: 10rpx;
+}
+.photo{
+  margin-top: 30rpx;
+  box-shadow: 0rpx -6rpx 16rpx rgba(50,50,50,0.1);
+}
+.member-home{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+}
+.commnet-box{
+  width: 94%;
+  margin: 0 auto;
+  border-top: 1px solid #eee;
+  padding-top: 24rpx;
+}
+.comment-list{
+  width: 90%;
+  margin: 0 auto;
+  font-size: 28rpx;
+  margin-bottom: 26rpx;
+}
+.comment-name{
+  color: #6A8592;
+  font-size: 28rpx;
+}
+.input-box{
+  width: 98%;
+  margin: 0 auto;
+  position: relative;
+  font-size:28rpx;
+  margin-bottom: 60rpx;
+}
+.input-box input{
+  border:1px solid #eee;
+  padding:6rpx 20rpx;
+}
+.input-box image{
+  width: 54rpx;
+  height: 45rpx;
+  position: absolute;
+  top: 10rpx;
+  right: 13rpx;
+}

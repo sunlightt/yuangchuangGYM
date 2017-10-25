@@ -1,0 +1,29 @@
+<view class="parent">
+    <view class="head">
+        <text class="title">身体健康状态</text>
+        <text class="msg">为了能提供更好的服务，希望您能抽出几分钟时间，将您的感受和建议告诉我们，我们非常重视美味客服宝贵意见，期待您的参与！现在我们马上开始吧</text>
+    </view>
+    <view class="que_list">
+        <form bindsubmit="forsubmit">
+            <block wx:for="{{data}}">
+                <view class="item" wx:if="{{item.is_choose==1}}">
+                    <text class="que_title">{{index+1}}、{{item.question_value}}?<text class="impot">*</text></text>
+                    <view class="wrap" data-index="{{index}}" data-id="{{item.id}}" bindtap="setindex">
+                        <radio-group class="radio-group" data-index="{{index}}" bindchange="radioChange">
+                            <label class="radio" wx:for="{{item.answers_val}}">
+                                <radio value="{{item.id}}" data-id="{{item.id}}" checked="" />{{item.answer}}<input name="resalut" class="input" data-index="{{setindex}}" data-id="{{item.supplement_after_selection[0].id}}" bindinput="inputvalue" placeholder='{{item.supplement_after_selection[0].supplement_key}}'  wx:if="{{item.answer=='是'}}"/>
+                            </label>
+                        </radio-group>
+                    </view>
+                </view>
+                <view class="item" wx:if="{{item.is_choose==0}}">
+                    <text class="que_title">{{index+1}}、{{item.question_value}}?<text class="impot">*</text></text>
+                    <view class="wrap">
+                        <input class="mgs_input" data-index="{{index}}" data-id="{{item.id}}" bindinput="oneinput"  name="msg"></input>
+                    </view>
+                </view>
+            </block>
+            <button form-type="submit" class="btn">提交</button>
+        </form>
+    </view>
+</view>

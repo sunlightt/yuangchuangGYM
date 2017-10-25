@@ -1,0 +1,105 @@
+{
+    "pages": [
+          
+        
+        
+        "pages/navigation/choicerole/index",
+
+        "pages/member/index",
+        "pages/member/reword/index",
+        "pages/member/course/index",
+        "pages/member/transcriptdetails/index",
+        "pages/member/activedetails/index",
+        "pages/role/index",  
+        "pages/member/order/index",
+        "pages/member/bodyRecord/index",
+        "pages/member/motto/index",
+        "pages/member/searchcoach/index",
+        "pages/member/searchcoach/briefinfo/index",
+        "pages/member/courserecord/index",
+        "pages/member/courserecord/question/index",
+        "pages/member/circle/index",
+        "pages/member/joinactivity/index",
+        "pages/member/personinfo/index",
+        "pages/member/personinfo/nameset/index",
+        "pages/member/personinfo/setphone/index",
+        "pages/member/personinfo/message/index",
+        "pages/member/personinfo/coachlist/index",
+       
+        "pages/coach/index",
+        "pages/coach/searchgym/index",
+        "pages/coach/searchgym/gyminf/index",
+        "pages/coach/transcriptdetails/index",
+        "pages/coach/dynamicdetails/index",
+        "pages/coach/coachinfo/index",
+        "pages/coach/coachinfo/singgym/index",
+        "pages/coach/coachinfo/graderecord/index",
+        "pages/coach/coachinfo/graderecord/leftdata/index",
+        "pages/coach/coachinfo/graderecord/choicemember/index",
+        "pages/coach/coachinfo/message/index",
+        "pages/coach/coachinfo/message/orderreply/index",
+        "pages/coach/coachinfo/message/orderreply/processing/index",
+        "pages/coach/coachinfo/message/orderreply/processing/settime/index",
+        "pages/coach/coachinfo/message/orderreply/processing/exercise/index",
+        "pages/coach/coachinfo/message/orderreply/processing/exercise/addaction/index",
+        "pages/coach/coachinfo/message/orderreply/processing/exercise/addaction/actiontype/index",
+        "pages/coach/coachinfo/message/orderreply/processing/trainaction/index",
+        "pages/coach/coachinfo/message/orderreply/processing/target/index",
+        "pages/coach/coachinfo/message/signapply/index",
+        
+        "pages/coach/memberlist/index",
+        "pages/coach/memberlist/membermanger/index",
+        "pages/coach/memberlist/membermanger/lessonrecord/index",
+        "pages/coach/memberlist/membermanger/lessonrecord/addcourse/index",
+        "pages/coach/memberlist/membermanger/overlesson/index",
+        "pages/coach/memberlist/membermanger/situation/index",
+        
+        "pages/coach/surpluslesson/index",
+        "pages/coach/lessonhistory/index",
+        "pages/coach/photolist/index",
+        "pages/coach/circle/index",
+        "pages/coach/publish/index",
+         
+        "pages/coach/maktraining/index",
+        "pages/coach/maktraining/modify/index",
+
+
+        "pages/gym/index",
+        "pages/gym/classdetails/index",
+        "pages/gym/reworddetails/index",
+        "pages/gym/transcriptdetails/index",
+
+        "pages/navigation/signin/index",
+        
+        "pages/navigation/whitehome/index",
+
+        "pages/mapdetail/index",
+        "pages/optionlist/index",
+        
+        "pages/commnet/index",
+        "pages/addlesson/index",
+        "pages/agree/index",
+        "pages/question/index",
+
+        "pages/thumbsuser/index",
+
+        "pages/boss/binding/index",
+        "pages/boss/submit/index",
+        "pages/boss/finish/index", 
+
+        "pages/activity/actdetails/index"
+        
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F7F7F7",
+        "navigationBarTitleText": "盖世英雄",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh":true
+    },
+    "api": {
+        "service": "https://caihhy.s1.natapp.cc/gym/public/index.php"
+    },
+    "debug": false
+}

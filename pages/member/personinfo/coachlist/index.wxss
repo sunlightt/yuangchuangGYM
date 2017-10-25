@@ -1,0 +1,81 @@
+/* coachlist.wxss */
+
+page {
+    background: #eee;
+}
+
+.item {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 40rpx;
+    background: #fff;
+    box-shadow: 0px -2px 6px rgba(30, 30, 30, 0.1);
+    position: relative;
+    height: 160rpx;
+    line-height: 160rpx;
+    font-size: 30rpx;
+}
+
+.coach-head {
+    width: 130rpx;
+    height: 160rpx;
+    text-align: center;
+    line-height: 160rpx;
+    position: absolute;
+    left: 0rpx;
+    top: 0rpx;
+}
+
+.coach-head image {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.coach-info {
+    margin-left: 140rpx;
+    height: 160rpx;
+}
+
+.coach-box {
+    height: 80rpx;
+    line-height: 120rpx;
+}
+
+.coach-time {
+    font-size: 26rpx;
+    color: #959595;
+    margin-left: 10rpx;
+}
+
+.coach-gym {
+    height: 80rpx;
+    line-height: 56rpx;
+    color: #959595;
+}
+
+.delete-coach {
+    width: 80rpx;
+    height: 90rpx;
+    line-height: 100rpx;
+    text-align: center;
+}
+
+.cancel {
+    height: 160rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 0rpx;
+}
+
+.cancel-img {
+    line-height: 40rpx;
+    text-align: center;
+}
+
+.cancel-img image {
+    width: 100rpx;
+    height: 50rpx;
+    vertical-align: middle;
+}

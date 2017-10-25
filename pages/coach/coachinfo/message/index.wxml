@@ -1,0 +1,12 @@
+<!--message.wxml-->
+
+<view class="list-box" wx:for="{{list}}">
+    <view class="list" bindtap="orderreply" data-type="{{item.type}}" data-id="{{item.index_id}}" data-figure="{{item.head_figure}}" data-mes="{{item.id}}">
+        <view class="mes-type">{{item.title}}</view>
+        <view class="mes-time-box">
+            <text class="mes-state"></text>
+            <text class="mes-time">{{item.day}}</text>
+            <text class="mes-clock">{{item.hour}}</text>
+        </view>
+    </view>
+</view>

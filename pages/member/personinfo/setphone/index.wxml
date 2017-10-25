@@ -1,0 +1,7 @@
+<view class="saveinput">
+    <input bindinput="bindKeyInput" type="number" focus value="" />
+</view>
+<view class="name-title"></view>
+<view class="savebtn">
+    <text bindtap="savephone">保存</text>
+</view>

@@ -1,0 +1,58 @@
+/* message.wxss */
+page{
+  background: #eee;
+}
+.list-box{
+  width:94%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 2rpx 4rpx 6rpx rgba(30,30,30,0.1);
+  margin-top: 24rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+}
+.list{
+  height: 90rpx;
+  line-height: 90rpx;
+  width:96%;
+  margin-left:4%;
+  background: #fff;
+  border-bottom: 1rpx solid #eee;
+  margin-top: 10rpx;
+  display: flex;
+}
+.mes-type{
+  flex: 2;
+}
+.mes-time-box{
+  flex: 3;
+}
+.mes-type{
+  font-size: 30rpx;
+  display:block;
+  white-space:nowrap; 
+  overflow:hidden; 
+  text-overflow:ellipsis;
+}
+
+.mes-state{
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background: red;
+  margin-right: 16rpx;
+}
+.mes-time-box{
+ height: 90rpx;
+ line-height: 90rpx;
+ color: #515151;
+ font-size: 35rpx;
+}
+.mes-clock{
+  float: right;
+  padding:0 30rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #ffff00;
+}

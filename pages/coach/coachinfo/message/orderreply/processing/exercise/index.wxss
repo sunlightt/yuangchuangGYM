@@ -1,0 +1,63 @@
+/* exercise.wxss */
+page{
+  background: #eee;
+}
+.list-box{
+  margin-top: 40rpx;
+}
+.list{
+  font-size: 30rpx;
+  background: #fff;
+}
+.text-wrap{
+  margin-left:40rpx;
+  border-bottom:1px solid #eee;
+  height:100rpx;
+  line-height: 100rpx;
+  padding-right:40rpx;  
+}
+.list text:nth-child(1){
+  float: left;
+}
+.list text:nth-child(2){
+  float:right; 
+}
+.plus-box{
+  margin-top: 50rpx;
+  padding-top: 30rpx;
+  text-align: center;
+  background: #fff;
+}
+.plus-box image{
+  width:50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+.image-box{
+  width:80rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 70rpx;
+   border: 6rpx dashed #515151;
+   margin-bottom: 10rpx;
+}
+.image-text{
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color:#959595;
+}
+.save-btn{
+  width:90%;
+  margin:0 auto;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  color:#fff;
+  background: #8FC320;
+  text-align: center;
+  margin-top: 50rpx;
+  border-radius: 8rpx;
+}

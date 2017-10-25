@@ -1,0 +1,14 @@
+<view class="list-box"  wx:for="{{list}}">
+    <view class="list">
+        <view class="text-wrap">
+            <text>{{item.day}}</text>
+            <text>{{item.option==1?"+":"-"}} {{item.hours}}节 ></text>
+        </view>
+    </view>
+</view>
+<view class="plus" bindtap="addcourse">
+    <image src="/resources/img/borderplus.png"></image>
+</view>
+<view class="title" >
+    添加购买课程记录
+</view>

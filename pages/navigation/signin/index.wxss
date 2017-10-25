@@ -1,0 +1,40 @@
+/* pages/signin/signin.wxss */
+
+view {
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #292526;
+}
+
+.title {
+    margin-top: 230rpx;
+    text-align: center;
+}
+
+.phone-number {
+    margin-top: 30px;
+    padding-left: 108rpx;
+}
+
+.phone-number1 {
+    margin-top: 20px;
+    padding-left: 108rpx;
+}
+
+input {
+    padding: 2rpx 6rpx;
+    display: inline-block;
+    overflow: visible;
+    border: 1px solid #d1d1d1;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 100rpx;
+}
+
+.btn text {
+    display: inline-block;
+    background-color: #fff100;
+    padding: 8rpx 60rpx;
+}

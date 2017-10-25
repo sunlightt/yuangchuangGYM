@@ -1,0 +1,49 @@
+page{
+  background: #eee;
+  padding-top: 30rpx;
+  box-sizing: border-box;
+}
+
+.list-box{
+  background: #fff;
+  width: 96%;
+  margin: 0 auto;
+  padding-bottom: 50rpx;
+  padding-top:30rpx;
+  box-shadow: 0rpx -2rpx 6rpx rgba(33,33,33,0.1);
+  font-size: 30rpx;
+}
+.text-wrap{
+  margin-left:40rpx;
+  border-bottom:1px solid #eee;
+  height:100rpx;
+  line-height: 100rpx;
+  padding-right:40rpx;  
+}
+.list text:nth-child(1){
+  float: left;
+}
+.list text:nth-child(2){
+  float:right; 
+}
+.plus{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  width: 96%;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 80rpx;
+}
+.plus image{
+  width:80rpx;
+  height: 80rpx;
+  vertical-align: middle;
+}
+.title{
+  font-size: 26rpx;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #959595;
+}

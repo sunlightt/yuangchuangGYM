@@ -1,0 +1,42 @@
+<!--pages/commnet/commnet.wxml-->
+  <!-- <view class="grade-box" data-id="{{item.id}}" wx:if="{{item.type == 3 }}">
+    <view class="food-head">
+      <image class="food-icon" src="/resources/img/activity.png"></image>
+      <text class="food-title">成绩单</text>
+    </view>
+    <view class="grade-report">
+      <view class="before-box">
+        <view class="body-number">
+          <view class="before-time">2016-6-6</view>
+          <view class="weight-box">
+            <view>体重:{{item.details.content[0].weight}}kg</view>
+            <view>三围:{{item.details.content[0].three_dimension}}</view>
+          </view>
+          <view class="weight-box">
+            <view>BMI:{{item.details.content[0].bmi}}</view>
+            <view>体型:过重</view>
+          </view>
+        </view>
+        <view class="body-img">
+          <image src="{{imgurl+item.details.content[0].photo}}"></image>
+        </view>
+      </view>
+      <view class="before-box">
+        <view class="body-number">
+          <view class="before-time">2016-6-6</view>
+          <view class="weight-box">
+            <view>体重:{{item.details.content[1].weight}}kg</view>
+            <view>三围:{{item.details.content[1].three_dimension}}</view>
+          </view>
+          <view class="weight-box">
+            <view>BMI:{{item.details.content[1].bmi}}</view>
+            <view>体型:过重</view>
+          </view>
+        </view>
+        <view class="body-img">
+          <image src="{{imgurl+item.details.content[1].photo}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>   -->
+

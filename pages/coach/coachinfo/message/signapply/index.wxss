@@ -1,0 +1,79 @@
+page{
+  background: #eee;
+}
+.info-box{
+  width: 96%;
+  margin: 0 auto;
+  text-align:center;
+  background: #fff;
+  padding:35rpx 0;
+}
+.info-box image{
+  width:110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  margin-bottom: 30rpx;
+}
+.name{
+  font-size: 38rpx;
+  color: #1b1b1b;
+  text-align: center;
+}
+.list-box{
+  width:96%;
+  margin: 0 auto;
+  margin-top: 50rpx;
+}
+
+.list{
+  font-size: 29rpx;
+  background: #fff;
+}
+
+.text-wrap{
+  margin-left:24rpx;
+  border-bottom:1px solid #eee;
+  height:112rpx;
+  line-height: 112rpx;
+  padding-right:40rpx;  
+}
+.list text:nth-child(1){
+  float: left;
+}
+.list text:nth-child(2){
+  float:right; 
+}
+.title{
+  margin-top:20rpx;
+  color: #7f7f7f;  
+}
+.title view{
+  margin-top: 14rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #7f7f7f;
+}
+.btn-box{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  margin-top: 40rpx;
+}
+.btn-box>view{
+  flex: 1;
+}
+.agree>view,.refuse>view{
+  width:240rpx;
+  height: 74rpx;
+  line-height: 74rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color:#fff;
+  margin: 0 auto;
+}
+.agree view{
+  background: #8FC320;
+}
+.refuse view{
+  background: #E84F41;
+}

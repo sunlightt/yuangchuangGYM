@@ -1,0 +1,358 @@
+/* pages/circle/circle.wxss */
+
+page {
+    background: #eee;
+    padding-bottom: 30rpx;
+}
+
+.circle-list {
+    width: 96%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10rpx rgba(33, 33, 33, 0.2);
+    background: #fff;
+    position: relative;
+    padding-bottom: 100rpx;
+    margin-top: 36rpx;
+    padding-top: 40rpx;
+}
+
+.title {
+    margin-left: 130rpx;
+    position: relative;
+    color: #ababab;
+    height: 150rpx;
+    border-bottom: 1px solid #eee;
+    font-size: 32rpx;
+}
+
+.title>image {
+    width: 74rpx;
+    height: 60rpx;
+    position: absolute;
+    left: -111rpx;
+    bottom: 35rpx;
+}
+
+.title>text {
+    line-height: 200rpx;
+}
+
+.info {
+    width: 100rpx;
+    position: absolute;
+    right: 24rpx;
+    bottom: 10rpx;
+}
+
+.coach .info {
+    bottom: -24rpx;
+}
+
+.info image {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius:50%;
+}
+
+.info view {
+    text-align: center;
+    color: #000;
+}
+
+.content {
+    margin-left: 130rpx;
+    padding-top: 26rpx;
+}
+
+.title1 {
+    line-height: 100rpx;
+    border-bottom: 1px solid #eee;
+    color: #ababab;
+    margin-top: 30rpx;
+    font-size: 30rpx;
+}
+
+.content-title {
+    font-size: 32rpx;
+    margin-top: 14rpx;
+}
+
+.content-des {
+    font-size: 30rpx;
+    line-height: 50rpx;
+    margin-top: 6rpx;
+}
+
+.list-box {
+    margin-top: 20rpx;
+    margin-bottom: 36rpx;
+}
+
+.list {
+    font-size: 32rpx;
+    line-height: 50rpx;
+}
+
+.adress {
+    position: absolute;
+    right: 30rpx;
+    bottom: 36rpx;
+    font-size: 26rpx;
+    color: #b1b1b1;
+    overflow: hidden;
+}
+
+.adress image {
+    width: 30rpx;
+    height: 38rpx;
+    vertical-align: middle;
+    margin-top: -9rpx;
+    margin-right: 13rpx;
+}
+
+.time-box {
+    position: relative;
+    top: 82rpx;
+    left: 0rpx;
+}
+
+.circle-list.coach {
+    width: 100%;
+}
+
+.coach .title {
+    border-bottom: 0rpx;
+    margin-bottom: 30rpx;
+}
+
+.img-box {
+    border-bottom: 1px solid #eee;
+    margin-left: 140rpx;
+    margin-right: 2%;
+}
+
+.img-box1 {
+    margin-left: 140rpx;
+    margin-right: 2%;
+}
+
+.img-box>image, .img-box1>image {
+    margin-top: 30rpx;
+    width: 100%;
+    height: 360rpx;
+}
+
+.number {
+    width: 170rpx;
+    height: 50rpx;
+    line-height: 60rpx;
+    float: left;
+    font-size: 26rpx;
+}
+
+.number image {
+    vertical-align: middle;
+    width: 40rpx;
+    height: 42rpx;
+    margin-top: -20rpx;
+    margin-right: 16rpx;
+}
+
+.number-box {
+    margin-top: 35rpx;
+    margin-bottom: 40rpx;
+}
+
+.head-list {
+    margin-left: 140rpx;
+    height: 50rpx;
+}
+
+.head-list image {
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20rpx;
+}
+
+.comment-wrap {
+    margin-left: 140rpx;
+    margin-top: 60rpx;
+    margin-bottom: 50rpx;
+}
+
+.comment {
+    width: 65%;
+    margin-left: 0%;
+}
+
+.coach-img text {
+    color: #1c1c1c;
+    font-weight: 500;
+}
+
+.food-box {
+    margin-left: 140rpx;
+}
+
+.food-title {
+    margin-top: 6rpx;
+    color: #999;
+    border-bottom: 1px solid #eee;
+    padding-left: 10rpx;
+    box-sizing: border-box;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    margin-left: 0rpx;
+}
+
+.food-detailed {
+    line-height: 80rpx;
+    font-size: 35rpx;
+}
+
+.comment-box {
+    margin-top: 26rpx;
+    background: #fff;
+    padding-top: 80rpx;
+    padding-bottom: 20rpx;
+}
+
+.comment-title {
+    position: relative;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-right: 30rpx;
+    margin-bottom: 30rpx;
+}
+
+.comment-title image {
+    width: 30rpx;
+    height: 30rpx;
+    position: absolute;
+    left: 80rpx;
+    top: 15rpx;
+}
+
+.comment-title view {
+    overflow: hidden;
+    margin-left: 140rpx;
+    color: #959595;
+    font-size: 32rpx;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+textarea {
+    width: auto;
+    border: 1px solid #969696;
+    margin-left: 140rpx;
+    margin-right: 20rpx;
+    height: 160rpx;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    padding: 10rpx 16rpx;
+}
+
+.range-box {
+    margin-left: 140rpx;
+}
+
+.submitbtn {
+    width: 386rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    background: #fff100;
+    margin: 0 auto;
+    margin-top: 50rpx;
+}
+
+.sharebtn {
+    width: 386rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    background: #00bf00;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 50rpx;
+    margin-bottom: 30rpx;
+}
+
+button {
+    border-radius: 0px;
+    font-size: 36rpx;
+}
+
+swiper {
+    height: 430rpx;
+}
+
+swiper-item {
+    background: #fff;
+}
+
+swiper-item image {
+    width: 96%;
+    margin-left: 2%;
+}
+
+.range-box {
+    height: 80rpx;
+    line-height: 80rpx;
+}
+
+.range-box text {
+    font-size: 32rpx;
+}
+
+radio-group {
+    display: inline-block;
+    font-size: 32rpx;
+    line-height: 32rpx;
+    margin-left: 20rpx;
+}
+
+wx-radio-input {
+    width: 18rpx;
+    height: 18rpx;
+}
+
+.add-box {
+    padding: 2%;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: hidden;
+}
+
+.add-img {
+    border: 1px solid #eee;
+    width: 23.6%;
+    height: 170rpx;
+    margin-left: 1%;
+    text-align: center;
+    float: left;
+}
+
+.add-img:first-of-type {
+    margin-left: 0;
+}
+
+.add-img image {
+    width: 50%;
+    height: 60rpx;
+    margin-top: 55rpx;
+}
+
+.coach {
+    margin-top: 30rpx;
+}

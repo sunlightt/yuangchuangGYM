@@ -1,0 +1,94 @@
+page {
+  background: #eee;
+  padding-top:30rpx;
+  box-sizing: border-box;
+}
+.lesson-plus{
+  width: 94%;
+  height: 360rpx;
+  background: #fff;
+  margin-left:4%;
+  position: relative;
+  display: flex;
+}
+.bulge{
+  width: 2%;
+  height: 36%;
+  position: absolute;
+  left: -2%;
+  top:50%;
+  transform: translateY(-50%);
+  background: #fff;
+}
+.thunder{
+  flex: 3;
+  height: 360rpx;
+  line-height: 360rpx;
+  text-align: center;
+}
+.thunder image{
+  width:120rpx;
+  height: 200rpx;
+  vertical-align: middle;
+}
+.all-lesson-number{
+  flex:4;
+  font-size:30rpx;
+  font-weight: 600;
+  padding-right: 10%;
+  box-sizing: border-box;
+}
+.all-lesson-number view{
+  text-align: right;
+}
+.all-number{
+  font-size: 100rpx;
+  text-align: center;
+  height: 220rpx;
+  line-height: 300rpx;
+}
+
+
+.list-box{
+  background: #fff;
+  width: 96%;
+  margin: 0 auto;
+  padding-bottom: 50rpx;
+  padding-top:30rpx;
+  margin-top: 40rpx;
+}
+.list{
+  padding-left:120rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+}
+.head-figure{
+  height: 100rpx;
+  width: 120rpx;
+  text-align: center;
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+}
+.head-figure image{
+  width:80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-top: -6rpx;
+}
+.name{
+  width: 100%;
+  height:100rpx;
+  border-bottom:1px solid #eee;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  color:#617D89;
+}
+.lesson-number{
+  float: right;
+  margin-right: 24rpx;
+  color:#333;
+}

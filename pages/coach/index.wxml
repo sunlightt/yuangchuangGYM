@@ -1,0 +1,315 @@
+<view class="wbox">
+    <view class="search-coach" bindtap="searchgym" wx:if="{{jumid}}">
+        健身房查询
+    </view>
+    <view class="head">
+        <view class="head-img" bindtap="coachInfo">
+            <image src="{{head_figure}}"></image>
+        </view>
+        <view class="name">{{name}}</view>
+        <view class="work-name">
+            <image src="/resources/img/map-symbol.png"></image>{{gym_inf.sign_gym_info[0].address}}</view>
+        <image src="/resources/img/coachbg.png" class="coachbg"></image>
+    </view>
+    <view class="wrap" wx:if="{{other && jumid}}">
+        <view class="list-wrap">
+            <view class="list" bindtap="bindlist">
+                <view class="list-number">{{signing_sum}}</view>
+                <view class="list-type">会员</view>
+            </view>
+            <view class="list" bindtap="surpluslesson">
+                <view class="list-number">{{rest_of_class}}</view>
+                <view class="list-type">剩余课时</view>
+            </view>
+            <view class="list" bindtap="lessonhistory">
+                <view class="list-number">{{history}}</view>
+                <view class="list-type">历史总课时</view>
+            </view>
+            <view class="list" bindtap="coachInfo">
+                <view class="list-number">
+                    <image src="/resources/img/setting.png"></image>
+                </view>
+                <view class="list-type">管理</view>
+            </view>
+        </view>
+        <view class="today-yesterday">
+            <view class="today {{today?'active':''}}" bindtap="todaylist">
+                今日约课
+                <image src="/resources/img/today.png"></image>
+            </view>
+            <view class="yesterday {{today?'':'active'}}" bindtap="tomorrowlist">明日约课
+                <image src="/resources/img/tomorrow.png"></image>
+            </view>
+        </view>
+        <view class="list-wrap">
+            <view class="list">
+                <view class="list-number">{{count}}</view>
+                <view class="list-type">今日共计</view>
+            </view>
+            <view class="list">
+                <view class="list-number">{{surplus}}</view>
+                <view class="list-type">今日剩余</view>
+            </view>
+            <view class="list">
+                <view class="list-number" style="font-size:29rpx;">{{first}}</view>
+                <view class="list-type">今日最早</view>
+            </view>
+            <view class="list">
+                <view class="list-number" style="font-size:29rpx;">{{last}}</view>
+                <view class="list-type">今日最晚</view>
+            </view>
+        </view>
+        <view class="wrap" wx:if="{{order && order.length>0}}">
+            <view class="time">
+                {{cur_day}}
+            </view>
+            <view class="member-list-box">
+                <view class="member-list" wx:for="{{order}}">
+                    <view class="member-img">
+                        <image src="{{item.head_figure}}"></image>
+                    </view>
+                    <view class="">
+                        <text class="member-time">{{item.begin_hour}}-{{item.end_hour}}</text>
+                        <text class="last-time">上次锻炼：{{item.last_course}}</text>
+                    </view>
+                    <view class="name-box">
+                        <text class="member-name">{{item.nick_name}}</text>
+                        <text class="healthy-food">营养餐：胡萝卜{{item.last_course_feeding}}</text>
+                    </view>
+                    <view class="pen" data-id="{{item.id}}" data-memid="{{item.member_id}}" data-coid="{{item.fitness_id}}" bindtap="tocircle">
+                        <image src="/resources/img/pen.png" style="width:100%;height:100%;"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="photo">
+        <view class="food-head">
+            <image class="food-icon" src="/resources/img/photo.png"></image>
+            <text class="food-title">相册（{{photo.count}}）</text>
+            <text class="food-time" data-number="{{photo.count}}" bindtap="photolist">查看全部>></text>
+        </view>
+        <view class="photo-box">
+            <image wx:for="{{photo.photo_list}}" src="{{item.img_url}}" class="photo-list"></image>
+        </view>
+    </view>
+    <view class="all-activity">
+        <text class="alldynamic" bindtap="showdymaic">{{typearr[dynamic_type-1]}}</text>
+    </view>
+    <view class="dynamic-wrap">
+        <view wx:for="{{circlelist}}" wx:if="{{dynamic_type==1}}">
+            <view class="info" data-uuid="{{item.uuid}}"  bindtap="thumbsuser">
+                <image src="{{item.head_figure}}" class="info-img"></image>
+                <text class="info-name">{{item.nick_name}}</text>
+                <text class="info-time">{{item.details.create_time}}</text>
+            </view>
+            <view class="dynamic-img" data-id="{{item.id}}" data-wid="{{item.index_id}}" bindtap="bindcircle">
+                <image mode="aspectFill" src="{{imgurl+item.details.img_url}}"></image>
+            </view>
+            <view class="comment-wrap">
+                <view class="comment">
+                    <image src="/resources/img/arrow.png"></image>
+                    <text>{{item.details.coach_reviews}}</text>
+                </view>
+                <view class="coach-img" data-uuid="{{item.details.coach_id}}"  bindtap="thumbsuser">
+                    <image src="{{item.details.head_figure}}"></image>
+                    <text>\n{{item.details.nick_name}}</text>
+                </view>
+            </view>
+            <view class="praise">
+                <view class="praise-icon">
+                    <image data-id="{{item.id}}" catchtap="thumb" src="/resources/img/praise.png"></image>
+                    <text>点赞<text class="praise-number">{{item.thumb_up_queue.count}}</text>+</text>
+                </view>
+                <view class="praise-people">
+                    <image wx:for="{{item.thumb_up_queue.list}}" src="{{item.head_figure}}" data-uuid="{{item.uuid}}" bindtap="thumbsuser"></image>
+                </view>
+            </view>
+            <view class="commnet-box">
+                <view class="comment-list" wx:for="{{item.comment.list}}" wx:for-item="comment">
+                    <text class="comment-name">{{comment.nick_name}}：</text>
+                    <text>{{comment.content}}</text>
+                </view>
+                <view class="input-box">
+                    <input maxlength="30" value="{{commentvalue}}" data-id="{{item.id}}" bindconfirm="comment" class="" placeholder='评论不能超过30个字' confirm-type="send"></input>
+                    <image src="/resources/img/commnet.png"></image>
+                </view>
+            </view>
+            <view class="line"></view>
+        </view>
+    </view>
+    <!--奖励  -->
+    <view class="reward_wrap" wx:for="{{reward_data}}" wx:if="{{dynamic_type==2}}">
+        <view class="food-head">
+            <image class="food-icon" src="/resources/img/activity.png"></image>
+            <text class="food-title">获得奖励</text>
+            <text class="food-time">{{item.details[0].create_time}}</text>
+        </view>
+        <view class="comment_wrap" data-id="{{item.id}}" bindtap="tabrewrodetails">
+            <view class="msg">
+                <view class="bg_wrap">
+                    <view class="bg_top"></view>
+                </view>
+                <view class="text_info">
+                    <view class="details_info">
+                        <text class="name"><text class="bot_line">{{item.details[0].full_name}}</text>
+                        <text class="font">同志:</text></text>
+                        <view class="msg_list">
+                            <text class="item">{{item.details[0].award_speech}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="bg_bottom">
+                    <view class="Company">
+                        <text class="title">{{item.details[0].store_title}}</text>
+                        <text class="date">{{create_time[index]}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="reward_info">
+                <view class="reward_cup">
+                    <image src="/resources/img/ranking.png"></image>
+                </view>
+                <view class="reward_list">
+                    <text class="subtitle">同时获得</text>
+                    <text class="item">{{item.details[index].more_rawrads}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="praise">
+            <view class="praise-icon">
+                <image data-id="{{item.id}}" catchtap="thumb" src="/resources/img/praise.png"></image>
+                <text>点赞<text class="praise-number">{{item.thumb_up_queue.count}}</text>+</text>
+            </view>
+            <view class="praise-people">
+                <image wx:for="{{item.thumb_up_queue.list}}" src="{{item.head_figure}}" bindtap="thumbsuser"></image>
+            </view>
+        </view>
+        <view class="commnet-box">
+            <view class="comment-list" wx:for="{{item.comment.list}}" wx:for-item="comment">
+                <text class="comment-name">{{comment.nick_name}}：</text>
+                <text>{{comment.content}}</text>
+            </view>
+            <view class="input-box">
+                <input maxlength="30" value="{{commentvalue}}" data-id="{{item.id}}" bindconfirm="comment" class="" placeholder='评论不能超过30个字' confirm-type="send"></input>
+                <image src="/resources/img/commnet.png"></image>
+            </view>
+        </view>
+    </view>
+    <!--成绩单  -->
+    <block wx:for="{{transcript_list}}" wx:if="{{dynamic_type==3}}">
+        <view class="grade-box">
+            <view class="food-head">
+                <image class="food-icon" src="/resources/img/activity.png"></image>
+                <text class="food-title">成绩单</text>
+                <!-- <text class="food-time">2017-4-17 18:30</text> -->
+            </view>
+            <view class="grade-report" data-id="{{item.id}}" data-index="{{index}}" bindtap="tabtranscript">
+                <view class="before-box">
+                    <view class="body-number">
+                        <view class="before-time">{{item.details.content[0].create_time}}</view>
+                        <view class="weight-box">
+                            <view>体重:{{item.details.content[0].weight}}kg</view>
+                            <view>三围:{{item.details.content[0].three_dimension}}</view>
+                        </view>
+                        <view class="weight-box">
+                            <view>BMI:{{item.details.content[0].bmi}}</view>
+                            <view>体型:过重</view>
+                        </view>
+                    </view>
+                    <view id="leftimg" class="body-img">
+                        <image src="{{imgurl+item.details.content[0].photo}}"></image>
+                    </view>
+                </view>
+                <view class="before-box">
+                    <view class="body-number">
+                        <view class="before-time">{{item.details.content[1].create_time}}</view>
+                        <view class="weight-box">
+                            <view>体重:{{item.details.content[1].weight}}kg</view>
+                            <view>三围:{{item.details.content[1].three_dimension}}</view>
+                        </view>
+                        <view class="weight-box">
+                            <view>BMI:{{item.details.content[1].bmi}}</view>
+                            <view>体型:过重</view>
+                        </view>
+                    </view>
+                    <view id="rightimg" class="body-img">
+                        <image src="{{imgurl+item.details.content[1].photo}}"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="praise">
+                <view class="praise-icon">
+                    <image data-id="{{item.id}}" catchtap="thumb" src="/resources/img/praise.png"></image>
+                    <text>点赞<text class="praise-number">{{item.thumb_up_queue.count}}</text>+</text>
+                </view>
+                <view class="praise-people">
+                    <image wx:for="{{item.thumb_up_queue.list}}" src="{{item.head_figure}}" data-uuid="{{item.uuid}}" bindtap="thumbsuser"></image>
+                </view>
+            </view>
+            <view class="commnet-box">
+                <view class="comment-list" wx:for="{{item.comment.list}}" wx:for-item="comment">
+                    <text class="comment-name">{{comment.nick_name}}：</text>
+                    <text>{{comment.content}}</text>
+                </view>
+                <view class="input-box">
+                    <input maxlength="30" value="{{commentvalue}}" data-id="{{item.id}}" bindconfirm="comment" class="" placeholder='评论不能超过30个字' confirm-type="send"></input>
+                    <image src="/resources/img/commnet.png" bindtap="send"></image>
+                </view>
+            </view>
+        </view>
+    </block>
+    <!--活动  -->
+    <view class="activity" wx:if="{{dynamic_type==4 && datalist.length>0}}">
+        <view class="food-head">
+            <image class="food-icon" src="/resources/img/activity.png"></image>
+            <text class="food-title">活动</text>
+            <text class="food-time">{{acti_data.details.create_time}}</text>
+        </view>
+        <view class="activity-title">{{begin}}-{{end}} {{acti_data.details.title}}</view>
+        <view class="map-box">
+            <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+        </view>
+        <view class="activity-info">
+            <image src="/resources/img/map-symbol.png"></image>
+            <text class="activity-address">{{acti_data.details.location}}</text>
+            <text class="activity-time">{{begin}} {{day}}天</text>
+        </view>
+        <view class="praise">
+            <view class="praise-icon">
+                <image data-id="{{acti_data.id}}" catchtap="thumb" src="/resources/img/praise.png"></image>
+                <text>点赞<text class="praise-number">{{acti_data.thumb_up_queue.count}}</text>+</text>
+            </view>
+            <view class="praise-people">
+                <image wx:for="{{acti_data.thumb_up_queue.list}}" src="{{item.head_figure}}"></image>
+            </view>
+        </view>
+        <view class="commnet-box">
+            <view class="comment-list" wx:for="{{acti_data.comment.list}}" wx:for-item="comment">
+                <text class="comment-name">{{comment.nick_name}}：</text>
+                <text>{{comment.content}}</text>
+            </view>
+            <view class="input-box">
+                <input maxlength="30" value="{{commentvalue}}" data-id="{{acti_data.id}}" bindconfirm="comment" class="" placeholder='评论不能超过30个字' confirm-type="send"></input>
+                <image src="/resources/img/commnet.png"></image>
+            </view>
+        </view>
+        <view class="detaile">
+            <text data-id="{{acti_data.id}}" bindtap="tabactdetails"> 进入详情>></text>
+        </view>
+        <view class="operation">
+            <view class="signup-number">{{join_count}}人报名</view>
+            <view class="my-signup" bindtap="addactivity" data-id="{{acti_data.index_id}}">我要报名</view>
+        </view>
+    </view>
+</view>
+<view class="footer">
+    <view class="item" data-index="0" bindtap="tabfooter">
+        <image src="{{fotimg[0]}}"></image>
+        <text>主页</text>
+    </view>
+    <view class="item" data-index="1" bindtap="tabfooter">
+        <image src="{{fotimg[1]}}"></image>
+        <text>健身房</text>
+    </view>
+</view>

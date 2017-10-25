@@ -1,0 +1,60 @@
+page{
+  background: #eee;
+  padding-top: 30rpx;
+  box-sizing: border-box;
+}
+
+.list-box{
+  background: #fff;
+  width: 96%;
+  margin: 0 auto;
+  padding-top:10rpx;
+  box-shadow: 0rpx -2rpx 6rpx rgba(33,33,33,0.1);
+  font-size: 30rpx;
+}
+.person-coach-img{
+  float: right;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.person-coach-img image{
+  width:70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right:20rpx;
+}
+.text-wrap{
+  margin-left:28rpx;
+  border-bottom:1px solid #eee;
+  height:111rpx;
+  line-height: 111rpx;
+  padding-right:30rpx;  
+  font-size: 30rpx;
+}
+.list text:nth-child(1){
+  float: left;
+}
+.list text:nth-child(2){
+  float:right; 
+}
+.delete-btn{
+  width:96%;
+  margin: 0 auto;
+  height: 100rpx;
+  line-height: 104rpx;
+  font-size: 30rpx;
+  text-align: center;
+  background: #fff;
+  margin-top: 100rpx;
+}
+.delete-btn image{
+  width: 50rpx;
+  height: 30rpx;
+  margin-left: 46rpx;
+}
+.delete-title{
+  font-size: 20rpx;
+  margin-top: 32rpx;
+  text-align: center;
+}

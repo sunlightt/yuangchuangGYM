@@ -1,0 +1,58 @@
+<!--奖励  -->
+<view class="reward_wrap" wx:for="{{reward_data}}">
+    <view class="food-head">
+        <image class="food-icon" src="/resources/img/activity.png"></image>
+        <text class="food-title">获得奖励</text>
+        <text class="food-time">{{item.details[0].create_time}}</text>
+    </view>
+    <view class="comment_wrap" bindtap="tabrewrodetails">
+        <view class="msg">
+            <view class="bg_wrap">
+                <view class="bg_top"></view>
+            </view>
+            <view class="text_info">
+                <view class="details_info">
+                    <text class="name"><text class="bot_line">{{item.details[0].full_name}}</text>
+                    <text class="font">同志:</text></text>
+                    <view class="msg_list">
+                        <text class="item">{{item.details[0].award_speech}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="bg_bottom">
+                <view class="Company">
+                    <text class="title">{{item.details[0].store_title}}</text>
+                    <text class="date">{{create_time[index]}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="reward_info">
+            <view class="reward_cup">
+                <image src="/resources/img/ranking.png"></image>
+            </view>
+            <view class="reward_list">
+                <text class="subtitle">同时获得</text>
+                <text class="item">{{item.details[index].more_rawrads}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="praise">
+        <view class="praise-icon">
+            <image data-id="{{item.id}}" catchtap="thumb" src="/resources/img/praise.png"></image>
+            <text>点赞<text class="praise-number">{{thumlist.count}}</text>+</text>
+        </view>
+        <view class="praise-people">
+            <image wx:for="{{thumlist.list}}" src="{{item.head_figure}}"></image>
+        </view>
+    </view>
+    <view class="commnet-box">
+        <view class="comment-list" wx:for="{{commlist}}" wx:for-item="comment">
+            <text class="comment-name">{{comment.nick_name}}：</text>
+            <text>{{comment.content}}</text>
+        </view>
+        <view class="input-box">
+            <input maxlength="30" value="{{commentvalue}}" data-id="{{item.id}}" bindconfirm="comment" class="" placeholder='评论不能超过30个字' confirm-type="send"></input>
+            <image src="/resources/img/commnet.png"></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,287 @@
+.head{
+  color:#fff;
+  font-size: 34rpx;
+  background: #1B1B1B;
+  text-align: center;
+  height: 110rpx;
+  line-height: 110rpx;
+  padding-top:0;
+  position:relative;
+}
+.select{
+    display:inline-block;
+    padding-right:60rpx;
+    position:relative;
+}
+.select:after{
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    border-top:18rpx solid yellow;
+    border-left:18rpx solid transparent;
+    border-right:18rpx solid transparent;
+    position:absolute;
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+}
+.gym_list{
+  position:absolute;
+  top:100%;
+  left:0;
+  width:100%;
+  z-index:9999;
+  background:rgba(0, 0, 0, .3);
+}
+.gym_list .item{
+    display:block;
+    width:100%;
+    font:30rpx/60rpx '微软雅黑';
+    color:#333;
+    text-align:center;
+    border-top:1rpx soild #eee;
+}
+.gym_list .item:first-child{
+    border-top:none;
+}
+.banner{
+  width:100%;
+  height: 420rpx;
+  display:block;
+}
+.company-info{
+  width:100%;
+  background: #EEEEEE;
+  padding:30rpx 50rpx;
+  box-sizing:border-box;
+  padding-left: 80rpx;
+}
+.coach-company image{
+  width: 31rpx;
+  height: 38rpx;
+  vertical-align: middle;
+  margin-top: -7rpx;
+  margin-right: 10rpx;
+}
+.company-info view{
+  font-size: 30rpx;
+  font-weight: 600;
+  line-height:64rpx;
+}
+.food-icon{
+  width:60rpx;
+  height:42rpx;
+  vertical-align: middle;
+  margin-top:-4rpx;
+  border-radius: 50%;
+}
+.food-icon.figure-img{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 2rpx;
+}
+.ranking{
+  display: flex;
+  width:76%;
+  margin:0 auto;
+  padding-bottom:30rpx;
+  border-bottom:1px solid #ddd;
+}
+.ranking-icon{
+  width:60rpx;
+  height: 32rpx;
+  border-radius: 0rpx;
+}
+.ranking>view{
+  flex:1;
+  height: 520rpx;
+}
+.ranking-info{
+  width:76%;
+  margin:0 auto;
+  position: absolute;
+  left: 12%;
+  bottom: 50rpx;
+}
+.one .ranking-info{
+  bottom: 65rpx;
+}
+.three .ranking-info{
+  bottom: 35rpx;
+}
+.ranking-info view{
+  text-align: center;
+  margin: 0 auto;
+}
+.one image{
+  height:480rpx;
+}
+.two image{
+  height:440rpx;
+}
+.three image{
+  height:400rpx;
+}
+.one,.two,.three{
+  position: relative;
+  overflow:hidden;
+}
+.one>image,.two>image,.three>image{
+  width:76%;
+  position: absolute;
+  bottom:0px;
+  left:50%;
+  transform:translateX(-50%);
+   z-index: -1;
+}
+.praise{
+  width:100%;
+  height: 100rpx;
+  line-height:100rpx;
+}
+.praise-icon{
+  float:left;
+  width:140rpx;
+  height:60rpx;
+  line-height:60rpx;
+}
+.praise-icon image{
+  width:36rpx;
+  height:38rpx;
+  vertical-align: middle;
+  margin-top:-4rpx;
+}
+.praise-icon text{
+  font-size:24rpx;
+}
+.praise-people{
+  margin-left:140rpx;
+  height:60rpx;
+  line-height: 60rpx;
+}
+.praise-people image{
+  width:60rpx;
+  height:60rpx;
+  border-radius: 50%;
+  margin-left:20rpx;
+}
+
+
+.ranking-info .figure-img{
+  width:120rpx;
+  height:120rpx;
+  border-radius: 50%;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+  background: #fff;
+}
+.three .figure-img{
+  margin-top: 14rpx;
+  margin-bottom: 20rpx;
+}
+.figure-img image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-top: 10rpx;
+}
+.one .figure-img{
+  width: 140rpx;
+  height: 140rpx;
+  margin-top: 15rpx;
+}
+.one .figure-img image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: 11rpx;
+}
+.people-head{
+  height:110rpx;
+  line-height: 110rpx;
+}
+.people-img{
+  width:100%;
+  display: block;
+}
+.friends-box{
+  padding:0 20rpx;
+}
+.coach-box{
+  margin-top:30rpx;
+}
+.coach-info{
+  width:200rpx;
+  float:left;
+  height:200rpx;
+  position: relative;
+}
+.coach-img{
+  position: relative;
+  transform: translateY(0%);
+  right: 0px;
+  top: 0rpx;
+}
+.coach-info view{
+  text-align: center;
+}
+
+.coach-img image{
+  width:90rpx;
+  height:90rpx;
+  border-radius: 50%;
+}
+.coach-name{
+  text-align: center;
+  font-size: 28rpx;
+}
+.coach-mes{
+  margin-left:200rpx;
+  font-size: 30rpx;
+  padding-bottom:60rpx;
+}
+.coach-company{
+  color:#434343;
+  font-size: 36rpx;
+  font-weight: 600;
+  position: relative;
+  border-bottom:1px solid #eee;
+  height:70rpx;
+  line-height: 70rpx;
+}
+.coach-company:before{
+  content:'';
+  width:30rpx;
+  height:30rpx;
+  position: absolute;
+}
+.coach-say{
+  margin-top:10rpx;
+  line-height: 36rpx;
+  color:#757575;
+  font-size: 26rpx;
+}
+.bar-img{
+  width: 32rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-top: -12rpx;
+  margin-right: 24rpx;
+}
+
+/*change  */
+.grade-box{
+   margin-top:0;
+}
+
+.foodimg-list , .scrol_view{
+    height:100rpx;
+}
+
+.foodimg-list image{
+     float:left; 
+     width:12%;
+}
+.wrap_img{
+    width:180%;
+}

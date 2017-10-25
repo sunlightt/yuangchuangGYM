@@ -1,0 +1,82 @@
+/* message.wxss */
+
+page {
+    background: #eee;
+}
+.list-box{
+  width:94%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 2rpx 4rpx 6rpx rgba(30,30,30,0.1);
+  margin-top: 24rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+}
+.list {
+    height: 90rpx;
+    line-height: 90rpx;
+    width: 96%;
+    margin-left: 4%;
+    background: #fff;
+    margin-top: 10rpx;
+    display: flex;
+}
+
+/*change  */
+.list-box .item{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    border-bottom: 1rpx solid #eee;
+}
+.list-box .left{
+    flex:8;
+    /* flex-direction:column;
+    justify-content:center; */
+}
+.list-box .right{
+    flex:2;
+    padding-right:3%;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
+}
+.list-box .right image{
+    display:block;
+    width:26rpx;
+    height:30rpx;
+    position:absolute;
+    top:0;
+    right:2%;
+}
+.list-box .right:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:1px;
+    background:#ffef00;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+.list-box .pass:after{
+    background:#21ac39;
+}
+
+.left .mes_type , .left .mess_date{
+    display:block;
+    font:30rpx/40rpx '微软雅黑';
+    color:#000;
+}
+.list-box .right text{
+    display:block;
+    font:30rpx '微软雅黑';
+    color:#000; 
+    text-align:center;
+}
+.left .mess_date{
+    color:#969696;
+
+}

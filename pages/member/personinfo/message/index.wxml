@@ -1,0 +1,15 @@
+<!--message.wxml-->
+<!--会员消息管理  -->
+<view class="list-box" wx:for="{{list}}">
+    <view class="item" bindtap="orderreply" data-type="{{item.type}}" data-id="{{item.addresser}}" data-mes="{{item.id}}">
+       <view class="left">
+          <text class="mes_type">{{item.title}}</text>
+          <text class="mess_date">{{item.day}}</text>
+       </view>
+       <view class="right">
+          <image src="/resources/img/zhong.png"></image>
+          <!-- <image src="/resources/img/pass.png"></image> -->
+          <text class="status">{{item.reading==0 ? '已审核' : '等待审核' }}</text>
+       </view>
+    </view>
+</view>

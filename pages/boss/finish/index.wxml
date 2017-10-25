@@ -1,0 +1,10 @@
+<view class="parent">
+    <view class="title">
+        <text>恭喜！您的资料已提交</text>
+    </view>
+    <text class="inf">添加下方的客服微信，客服美女会帮助您开通健身房功能哦！</text>
+    <view class="img">
+        <image src="http://o6nl1koop.bkt.clouddn.com/ziliao.png"></image>
+    </view>
+    <text class="tip">添加完客服微信后，可关闭此页面，剩下的事情通过微信沟通即可。</text>
+</view>

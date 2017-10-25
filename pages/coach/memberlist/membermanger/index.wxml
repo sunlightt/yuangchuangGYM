@@ -1,0 +1,31 @@
+<view class="list-box">
+    <view class="list" bindtap="maktraining">
+        <view class="text-wrap">
+            <text>指定训练计划</text>
+            <text>></text>
+        </view>
+    </view>  
+    <view class="list" bindtap="situation">
+        <view class="text-wrap">
+            <text>查看上课情况</text>
+            <text>></text>
+        </view>
+    </view>
+    <view class="list" bindtap="lessonsrecord">
+        <view class="text-wrap">
+            <text>购买课程</text>
+            <text>{{bought}}节 ></text>
+        </view>
+    </view>
+    <view class="list">
+        <view class="text-wrap" bindtap="overlesson">
+            <text>剩余课程</text>
+            <text>{{lessons}}节 ></text>
+        </view>
+    </view>
+</view>
+<view class="delete-btn" bindtap="delete">
+    删除并解约
+    <image src="/resources/img/delete.png"></image>
+</view>
+<view class="delete-title">解约后，不影响历史数据，但约课功能将不会在与该会员使用</view>

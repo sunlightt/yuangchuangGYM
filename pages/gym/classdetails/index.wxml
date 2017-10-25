@@ -1,0 +1,46 @@
+<!--课程动态  -->
+<block wx:for="{{clasdynamic}}">
+    <view class="friends-box" data-id="{{item.id}}" bindtap="tabclassdetails">
+        <view class="food-head people-head">
+            <image class="food-icon figure-img" src="{{item.head_figure}}"></image>
+            <text class="food-title">{{item.nick_name}}</text>
+            <text class="food-time">{{item.details.create_time}}</text>
+        </view>
+        <image class="people-img" src="{{imgurl+item.details.img_url}}"></image>
+        <view class="coach-box">
+            <view class="coach-info">
+                <view class="coach-img">
+                    <image src="{{item.details.head_figure}}"></image>
+                </view>
+                <view class="coach-name">{{item.details.nick_name}}</view>
+            </view>
+            <view class="coach-mes">
+                <view class="coach-company">
+                    <image src="/resources/img/map-symbol.png"></image>
+                    <text>能量驿站健身工作室</text>
+                </view>
+                <view class="coach-say">{{item.details.coach_reviews}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="praise">
+        <view class="praise-icon">
+            <image data-id="{{item.id}}" catchtap="thumb" src="/resources/img/praise.png"></image>
+            <text>点赞<text class="praise-number">{{thumlist.count}}</text>+</text>
+        </view>
+        <view class="praise-people">
+            <image wx:for="{{thumlist.list}}" wx:for-item="i" src="{{i.head_figure}}"></image>
+        </view>
+    </view>
+    <view class="commnet-box">
+        <view class="comment-list" wx:for="{{commlist}}" wx:for-item="comment">
+            <text class="comment-name">{{comment.nick_name}}：</text>
+            <text>{{comment.content}}</text>
+        </view>
+        <view class="input-box">
+            <input maxlength="30" value="{{commentvalue}}" data-id="{{item.id}}" bindconfirm="comment" class="" placeholder='评论不能超过30个字' confirm-type="send"></input>
+            <image src="/resources/img/commnet.png"></image>
+        </view>
+    </view>
+    <!-- <view class="line"></view> -->
+</block>

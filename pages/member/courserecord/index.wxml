@@ -1,0 +1,83 @@
+<view class="head">
+    <image src="/resources/img/head.png" class="head-bg"></image>
+    <view class="gym-info">
+        <image src="/resources/img/map-symbol.png"></image>{{store_title}}
+    </view>
+    <view class="course-number">
+        <view class="all-course">
+            <view class="number first">{{bought_class}}</view>
+            <view class="">总课时</view>
+        </view>
+        <view class="rest-course">
+            <view class="number">{{rest_of_class}}</view>
+            <view class="">剩余课时</view>
+        </view>
+    </view>
+</view>
+<view class="">
+    <view class="record-plan">
+        <view class="" data-id="1" bindtap="tabbar">上课记录
+            <image src="/resources/img/photo.png" wx:if="{{bool}}"></image>
+            <image src="/resources/img/photo.png" wx:else></image>
+        </view>
+        <view class="" data-id="2" bindtap="tabbar">训练计划
+            <image src="/resources/img/tomorrow.png" wx:if="{{bool}}"></image>
+            <image src="/resources/img/tomorrow.png" wx:else></image>
+        </view>
+    </view>
+    <view class="list-box" wx:if="{{bool}}">
+        <view class="list" wx:for="{{record_list}}">
+            <view class="list-left">
+                <view class="order-number">{{index+1}}</view>
+                <view class="time">{{item.create_time}}</view>
+            </view>
+            <view class="list-right">
+                <view class="">
+                    <text class="content">{{item.title}}</text>
+                    <text class="type">训练部位</text>
+                </view>
+                <view class="">
+                    <text class="content">{{item.feeding}}</text>
+                    <text class="type">营养餐食</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="plan" wx:else>
+        <view class="plan-box clearfix" wx:for="{{recordlist}}" wx:for-item="opt">
+            <view class="plan-time">
+                {{opt.create_time}}
+            </view>
+            <view class="record-list">
+                <view class="record-number">{{opt.bust}}</view>
+                <view class="record-text">胸围(cm)</view>
+            </view>
+            <view class="record-list">
+                <view class="record-number">{{opt.waist}}</view>
+                <view class="record-text">腰围(cm)</view>
+            </view>
+            <view class="record-list">
+                <view class="record-number">{{opt.hip_dimension}}</view>
+                <view class="record-text">臀围(cm)</view>
+            </view>
+            <view class="record-list">
+                <view class="record-number">{{opt.weight}}</view>
+                <view class="record-text">体重(kg)</view>
+            </view>
+            <view class="record-list">
+                <view class="record-number">{{opt.bmi}}</view>
+                <view class="record-text">BMI</view>
+            </view>
+            <view class="record-list">
+                <view class="record-number">{{opt.body_fat_rate}}%</view>
+                <view class="record-text">体脂率</view>
+            </view>
+            <view class="question-box"> 
+                <view class="question-list" data-id="{{item.id}}" data-hid="{{opt.id}}" bindtap="question" wx:for="{{quetype}}">
+                    {{item.title}}
+                    <image src="/resources/img/question.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

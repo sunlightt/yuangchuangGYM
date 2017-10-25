@@ -1,0 +1,23 @@
+<view class="">
+    <view class="title">提示</view>
+    <view class="content">
+        <text>当系统的剩余课时与实际的剩余课时不符时,教练可以手动更改剩余课时，更改后系统将通知会员以及健身房老板</text>
+    </view>
+    <view class="number-box">
+        <view class="plus" bindtap="plus">
+            <image src="/resources/img/borderplus.png"></image>
+        </view>
+        <view class="number">
+            <input align="center" bindinput="bindKeyInput" value="{{value}}" />
+        </view>
+        <view class="reduce" bindtap="reduce">
+            <image src="/resources/img/reduce.png"></image>
+        </view>
+    </view>
+    <view class="text-box">
+        <textarea bindinput="text" placeholder="填写原因" />
+    </view>
+    <view class="save-btn" bindtap="savebtn">
+        确认提交
+    </view>
+</view>

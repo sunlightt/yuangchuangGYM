@@ -1,0 +1,68 @@
+<view class="parent">
+    <view class="map-box">
+        <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 360rpx;"></map>
+    </view>
+    <view class="content">
+        <view class="title">
+            {{begin}}-{{end}} {{res.title}}
+        </view>
+        <view class="content-list">
+            <image src="/resources/img/map-symbol.png"></image>
+            <text> {{res.location}}</text>
+        </view>
+        <view class="content-list">
+            <image src="/resources/img/map-symbol.png"></image>
+            <text>{{begin}} {{day}}天</text>
+        </view>
+        <view class="activity-des">
+            <image src="/resources/img/yellow.png"></image>
+            <text>活动说明</text>
+        </view>
+        <view class="des-content">
+            {{res.explain}}
+        </view>
+        <view wx:if="{{res.pictures}}">
+            <view class="activity-des">
+                <image src="/resources/img/yellow.png"></image>
+                <text>精彩瞬间</text>
+            </view>
+            <view>
+                <view class="big-img">
+                    <image src="{{imgurl+res.pictures[index]}}"></image>
+                </view>
+                <view class="img-box">
+                    <view class="img-list" data-index="{{0}}" bindtap="tabpic">
+                        <image src="{{imgurl+res.pictures[0]}}"></image>
+                    </view>
+                    <view class="img-list" data-index="{{1}}" bindtap="tabpic">
+                        <image src="{{imgurl+res.pictures[1]}}"></image>
+                    </view>
+                    <view class="img-list" data-index="{{2}}" bindtap="tabpic">
+                        <image src="{{imgurl+res.pictures[2]}}"></image>
+                    </view>
+                    <view class="img-list" data-index="{{3}}" bindtap="tabpic">
+                        <image src="{{imgurl+res.pictures[3]}}"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="savebtn" bindtap='savebtn'>
+        <image src="/resources/img/save.png"></image>
+        <text>我要报名</text>
+    </view>
+    <view class="number-box">{{number}}人已报名</view>
+    <view class="join-box">
+        <image src="{{item.head_figure}}" wx:for="{{res.join_list}}"></image>
+    </view>
+</view>
+<view class="footer">
+    <view class="item" data-index="0" bindtap="tabfooter">
+        <image src="{{fotimg[0]}}"></image>
+        <text>主页</text>
+    </view>
+    <view class="item" data-index="1" bindtap="tabfooter">
+        <image src="{{fotimg[1]}}"></image>
+        <text>健身房</text>
+    </view>
+</view>
